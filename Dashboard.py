@@ -77,9 +77,9 @@ def _sidebar(current_page: st.Page, tool_pages: dict[str, st.Page]) -> None:
     with st.sidebar:
         st.markdown(
             f"""
-<div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.35rem;">
-  <img src="{VDB_LOGO_URL}" alt="VDB logo" style="width:2.25rem; height:2.25rem;" />
-  <div style="font-size:1.55rem; font-weight:700;">VDB tools</div>
+<div style="display:flex; flex-direction:column; align-items:flex-start; gap:0.65rem; margin-bottom:0.35rem;">
+  <img src="{VDB_LOGO_URL}" alt="VDB logo" style="width:5rem; height:5rem;" />
+  <div style="font-size:1.55rem; font-weight:700; line-height:1;">VDB tools</div>
 </div>
             """,
             unsafe_allow_html=True,
