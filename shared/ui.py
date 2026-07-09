@@ -74,7 +74,7 @@ def render_tool_grid(tools: list[Tool], cols: int = 3) -> None:
                 if module_exists(tool):
                     open_label = "Open in dashboard"
                     if st.button(open_label, key=f"open_{tool.key}", use_container_width=True, type="primary"):
-                        st.session_state["page"] = "🧰 Tools"
+                        st.session_state["page"] = "🏠 Home"
                         st.session_state["active_tool"] = tool.key
                         st.session_state["tool_category"] = tool.category
                         st.rerun()
