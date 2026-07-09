@@ -3,9 +3,10 @@ from io import BytesIO
 
 import pandas as pd
 import streamlit as st
+from shared.constants import VDB_LOGO_URL
 
 
-st.set_page_config(page_title="File Merger", layout="wide")
+st.set_page_config(page_title="File Merger", page_icon=VDB_LOGO_URL, layout="wide")
 st.title("Excel / CSV File Merger")
 
 

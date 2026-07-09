@@ -9,12 +9,13 @@ import requests
 import streamlit as st
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
+from shared.constants import VDB_LOGO_URL
 
 
 # ----------------------------
 # Streamlit setup
 # ----------------------------
-st.set_page_config(page_title="Fast URL Checker", layout="wide")
+st.set_page_config(page_title="Fast URL Checker", page_icon=VDB_LOGO_URL, layout="wide")
 st.title("⚡ Fast & Reliable URL Checker (CSV upload or CSV URL)")
 
 

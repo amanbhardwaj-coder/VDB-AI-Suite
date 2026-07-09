@@ -1,4 +1,5 @@
 import streamlit as st
+from shared.constants import VDB_LOGO_URL
 import json
 import pandas as pd
 import io
@@ -126,7 +127,7 @@ def create_option(row, icon_type="img"):
 # ==========================================
 # 3. STREAMLIT APP LOGIC
 # ==========================================
-st.set_page_config(page_title="Jewelry JSON Generator", page_icon="💎")
+st.set_page_config(page_title="Jewelry JSON Generator", page_icon=VDB_LOGO_URL)
 
 st.title("💎 Jewelry Filter JSON Generator")
 st.markdown("Upload your configured Excel template to instantly generate the frontend JSON configuration.")

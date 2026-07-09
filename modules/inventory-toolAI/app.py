@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pandas as pd
 import streamlit as st
+from shared.constants import VDB_LOGO_URL
 
 from core.parser import read_uploaded_file
 from core.normalizer import normalize_input_dataframe
@@ -20,7 +21,7 @@ HEADER_DIR = Path("configs/headers")
 GENERATED_DIR = Path("generated")
 
 
-st.set_page_config(page_title=APP_TITLE, layout="wide")
+st.set_page_config(page_title=APP_TITLE, page_icon=VDB_LOGO_URL, layout="wide")
 st.title(APP_TITLE)
 
 st.markdown(

@@ -517,10 +517,11 @@ def _running_under_streamlit():
 # ============================================================================
 if _running_under_streamlit():
     import streamlit as st
+    from shared.constants import VDB_LOGO_URL
 
     st.set_page_config(
         page_title="MFG → VDB Converter",
-        page_icon="💎",
+        page_icon=VDB_LOGO_URL,
         layout="wide",
     )
 
