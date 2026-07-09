@@ -5,9 +5,10 @@ from pathlib import Path
 
 import streamlit as st
 
+from shared.module_runner import render_tool_app
 from shared.registry import TOOLS, categories, get_tool, module_exists
 from shared.theme import apply_theme
-from shared.ui import command_block, empty_tool_state, hero, render_tool_grid, repo_table, section_title
+from shared.ui import command_block, hero, render_tool_grid, repo_table, section_title
 
 
 st.set_page_config(
@@ -34,10 +35,6 @@ if "active_tool" not in st.session_state:
     st.session_state["active_tool"] = "smiling_rocks"
 if "favorites_only" not in st.session_state:
     st.session_state["favorites_only"] = False
-
-
-def set_page(page: str) -> None:
-    st.session_state["page"] = page
 
 
 def sidebar() -> None:
@@ -116,8 +113,8 @@ def home_page() -> None:
             """
 <div class="vdb-timeline">
   <div class="vdb-step"><b>Dashboard shell</b><span>Polished UI, navigation, search, repository center, and roadmap are ready.</span></div>
-  <div class="vdb-step"><b>Modules uploaded</b><span>The dashboard can detect modules once they exist under the modules/ folder.</span></div>
-  <div class="vdb-step"><b>Next integration</b><span>Mount each module by adding adapters that call each tool's run() function.</span></div>
+  <div class="vdb-step"><b>Modules uploaded</b><span>The dashboard detects modules under the modules/ folder.</span></div>
+  <div class="vdb-step"><b>Apps runnable</b><span>Registered module apps can now be launched inside the dashboard iframe.</span></div>
 </div>
             """,
             unsafe_allow_html=True,
@@ -129,7 +126,7 @@ def home_page() -> None:
 def tools_page() -> None:
     hero(
         "Tool Library",
-        "Search, filter, and launch VDB automation tools from one place. Modules that are not mounted yet remain visible as registered tools.",
+        "Search, filter, launch, and run VDB automation apps from one place.",
         ["Inventory", "Excel", "Images", "Config", "Jewelry"],
     )
 
@@ -162,7 +159,7 @@ def tools_page() -> None:
     render_tool_grid(filtered)
 
     st.markdown("---")
-    section_title("Open registered tool", "Mounted tools will run here; pending modules show setup guidance")
+    section_title("Run app", "Select a module and launch it inside this dashboard")
     tool_keys = [tool.key for tool in TOOLS]
     default_index = tool_keys.index(st.session_state.get("active_tool", "smiling_rocks")) if st.session_state.get("active_tool") in tool_keys else 0
     selected_key = st.selectbox(
@@ -178,32 +175,18 @@ def tools_page() -> None:
         st.error("Tool not found in registry.")
         return
 
-    if tool.key == "smiling_rocks":
-        smiling_rocks_placeholder(tool)
-    else:
-        empty_tool_state(tool)
-
-
-def smiling_rocks_placeholder(tool) -> None:
     hero(
-        "💎 Smiling Rocks Converter",
-        "Adapter slot is ready. The next step is to mount modules/Smiling_Rocks/app.py so this runs directly inside the suite.",
-        ["Inventory", "Adapter ready"],
+        f"{tool.icon} {tool.name}",
+        tool.description,
+        [tool.category, "Local module" if module_exists(tool) else "Missing module"],
     )
-    if module_exists(tool):
-        st.success(f"Module found at `{tool.module_path}`.")
-    else:
-        st.warning(f"Module not detected at `{tool.module_path}` in the current runtime.")
-    st.markdown("### Next adapter work")
-    st.markdown(
-        """
-1. Import the conversion core from `modules/Smiling_Rocks/app.py` without auto-rendering its standalone Streamlit page.
-2. Rebuild the upload UI inside the suite.
-3. Call `convert()` and `load_image_map()` from the module.
-4. Show metrics, preview, warnings, and download button inside this page.
-        """
-    )
-    st.link_button("Open Smiling Rocks repo", tool.repo_url, use_container_width=True)
+
+    if not module_exists(tool):
+        st.error(f"Module folder not found: `{tool.module_path}`")
+        st.link_button("Open repository", tool.repo_url, use_container_width=True)
+        return
+
+    render_tool_app(tool)
 
 
 def repository_page() -> None:
@@ -240,12 +223,13 @@ def roadmap_page() -> None:
 - Search and filters
 - Repository center
 - Module detection
+- Iframe app runner
 
-### Phase 2 — First mounted tools
-- Smiling Rocks Converter
-- File Merge
-- URL Checker
-- Excel Splitter
+### Phase 2 — Better adapters
+- Smiling Rocks native integration
+- File Merge native integration
+- URL Checker native integration
+- Excel Splitter native integration
             """
         )
     with c2:
@@ -265,13 +249,11 @@ def roadmap_page() -> None:
             """
         )
 
-    section_title("Adapter pattern", "Every tool should expose one simple entry point")
+    section_title("Current runner", "Apps are started as child Streamlit apps and embedded below the shell")
     st.code(
-        """def run():
-    import streamlit as st
-    st.title("My Tool")
-    # existing Streamlit code here""",
-        language="python",
+        """# dashboard launches each uploaded module like this
+python -m streamlit run modules/<tool>/app.py --server.port <free_port>""",
+        language="bash",
     )
 
 
