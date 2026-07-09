@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-from datetime import datetime
 from pathlib import Path
 
 import streamlit as st
@@ -8,7 +7,7 @@ import streamlit as st
 from shared.module_runner import render_tool_app
 from shared.registry import TOOLS, categories, get_tool, module_exists
 from shared.theme import apply_theme
-from shared.ui import command_block, hero, render_tool_grid, section_title
+from shared.ui import section_title
 
 
 st.set_page_config(
@@ -27,8 +26,6 @@ if "page" not in st.session_state:
     st.session_state["page"] = HOME_PAGE
 if "active_tool" not in st.session_state:
     st.session_state["active_tool"] = "smiling_rocks"
-if "favorites_only" not in st.session_state:
-    st.session_state["favorites_only"] = False
 if "tool_category" not in st.session_state:
     default_tool = get_tool(st.session_state["active_tool"])
     st.session_state["tool_category"] = default_tool.category if default_tool else "All"
@@ -54,7 +51,7 @@ def tool_option_label(tool_key: str) -> str:
 def sidebar() -> None:
     with st.sidebar:
         st.markdown("# 💎 VDB AI Suite")
-        st.caption("Internal automation dashboard")
+        st.caption("Choose a tool and run it below.")
         st.markdown("---")
         st.caption("Home")
         st.session_state["page"] = HOME_PAGE
@@ -104,63 +101,11 @@ def sidebar() -> None:
                 activate_tool("file_merge")
                 st.rerun()
 
-        st.markdown("---")
-        local_count = sum(1 for tool in TOOLS if module_exists(tool))
-        st.metric("Registered tools", len(TOOLS))
-        st.metric("Local modules", local_count)
-        st.caption(f"Last opened: {datetime.now().strftime('%d %b %Y, %I:%M %p')}")
-
 
 def home_page() -> None:
-    local_count = sum(1 for tool in TOOLS if module_exists(tool))
-    fav_tools = [tool for tool in TOOLS if tool.favorite]
-
-    hero(
-        "VDB AI Suite",
-        "A single command center for inventory conversion, Excel utilities, URL checks, JSON helpers, jewelry configuration, and client-specific automation tools.",
-        ["Streamlit", "Automation", "VDB workflows", "Modular tools"],
-    )
-
-    c1, c2, c3, c4 = st.columns(4)
-    c1.metric("Tools", len(TOOLS))
-    c2.metric("Categories", len(categories()))
-    c3.metric("Local modules", f"{local_count}/{len(TOOLS)}")
-    c4.metric("Favorites", len(fav_tools))
-
-    section_title("Quick actions", "Start from the tools you use most")
-    q1, q2, q3, q4 = st.columns(4)
-    quick_actions = [
-        ("💎 Smiling Rocks", "smiling_rocks"),
-        ("📦 Inventory AI", "inventory_ai"),
-        ("📄 File Merge", "file_merge"),
-        ("🖼️ URL Checker", "url_checker"),
-    ]
-    for col, (label, key) in zip([q1, q2, q3, q4], quick_actions):
-        with col:
-            if st.button(label, key=f"quick_{key}", use_container_width=True, type="primary" if key == "smiling_rocks" else "secondary"):
-                activate_tool(key)
-                st.rerun()
-
-    section_title("Favorite tools", "Pinned for faster access")
-    render_tool_grid(fav_tools)
-
+    st.subheader("Tool Launcher")
+    st.caption("Select a tool from the left and it will open here.")
     render_active_tool()
-
-    section_title("System status", "What is ready right now")
-    left, right = st.columns([1.2, 1])
-    with left:
-        st.markdown(
-            """
-<div class="vdb-timeline">
-  <div class="vdb-step"><b>Home-first dashboard</b><span>Tool selection and launch now happen directly from the Home screen.</span></div>
-  <div class="vdb-step"><b>Modules uploaded</b><span>The dashboard detects modules under the modules/ folder.</span></div>
-  <div class="vdb-step"><b>Apps runnable</b><span>Registered module apps can now be launched inside the dashboard iframe.</span></div>
-</div>
-            """,
-            unsafe_allow_html=True,
-        )
-    with right:
-        command_block("streamlit run Dashboard.py")
 
 
 def render_active_tool() -> None:
@@ -174,20 +119,17 @@ def render_active_tool() -> None:
     with title_col:
         st.subheader(f"{tool.icon} {tool.name}")
         st.caption(tool.description)
-        st.caption("Use the sidebar dropdown to switch tools. The embedded app below keeps the same workflow as before.")
+        st.caption(
+            f"{tool.category} | {Path(tool.module_path).name} | {'Ready' if module_exists(tool) else 'Missing'}"
+        )
     with repo_col:
         st.link_button("Open repository", tool.repo_url, use_container_width=True)
-
-    info_cols = st.columns(3)
-    info_cols[0].metric("Category", tool.category)
-    info_cols[1].metric("Module", Path(tool.module_path).name)
-    info_cols[2].metric("Status", "Ready" if module_exists(tool) else "Missing")
 
     if not module_exists(tool):
         st.error(f"Module folder not found: `{tool.module_path}`")
         return
 
-    section_title("Live app", "Compact workspace with the tool selector moved into the sidebar")
+    section_title("Live app")
     render_tool_app(tool, height=980)
 
 
