@@ -99,11 +99,16 @@ def start_tool(tool: Tool) -> str:
     entry = find_entry_file(tool)
     if not entry:
         raise FileNotFoundError(f"No Python entry file found in {tool.module_path}")
+    entry = entry.resolve()
 
     port = find_free_port()
     env = os.environ.copy()
     env["STREAMLIT_SERVER_HEADLESS"] = "true"
     env["STREAMLIT_BROWSER_GATHER_USAGE_STATS"] = "false"
+    pythonpath_parts = [str(entry.parent), str(Path.cwd())]
+    if env.get("PYTHONPATH"):
+        pythonpath_parts.append(env["PYTHONPATH"])
+    env["PYTHONPATH"] = os.pathsep.join(pythonpath_parts)
 
     cmd = [
         sys.executable,
@@ -121,7 +126,7 @@ def start_tool(tool: Tool) -> str:
 
     proc = subprocess.Popen(
         cmd,
-        cwd=str(Path.cwd()),
+        cwd=str(entry.parent),
         env=env,
         stdout=subprocess.DEVNULL,
         stderr=subprocess.DEVNULL,
