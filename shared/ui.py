@@ -71,13 +71,15 @@ def render_tool_grid(tools: list[Tool], cols: int = 3) -> None:
         for col, tool in zip(row, tools[i : i + cols]):
             with col:
                 tool_card(tool)
-                open_label = "Open in dashboard" if tool.key == "smiling_rocks" else "Open repo"
-                if tool.key == "smiling_rocks":
+                if module_exists(tool):
+                    open_label = "Open in dashboard"
                     if st.button(open_label, key=f"open_{tool.key}", use_container_width=True, type="primary"):
-                        st.session_state["page"] = "Tools"
+                        st.session_state["page"] = "🧰 Tools"
                         st.session_state["active_tool"] = tool.key
+                        st.session_state["tool_category"] = tool.category
                         st.rerun()
                 else:
+                    open_label = "Open repo"
                     st.link_button(open_label, tool.repo_url, use_container_width=True)
 
 
