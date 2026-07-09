@@ -7,9 +7,12 @@ from shared.registry import TOOLS, get_tool, module_exists
 from shared.theme import apply_theme
 
 
+VDB_LOGO_URL = "https://app.vdbapp.com/vdb_logo_icon.ico"
+
+
 st.set_page_config(
-    page_title="VDB AI Suite",
-    page_icon="💎",
+    page_title="VDB tools",
+    page_icon=VDB_LOGO_URL,
     layout="wide",
     initial_sidebar_state="expanded",
 )
@@ -31,7 +34,7 @@ def _tool_page_factory(tool_key: str):
 
 
 def _build_navigation():
-    home_page = st.Page(_home_page, title="Home", icon="💎", default=True)
+    home_page = st.Page(_home_page, title="Home", default=True)
 
     tool_pages: dict[str, st.Page] = {}
     for tool in TOOLS:
@@ -72,7 +75,15 @@ def _activate_tool(tool_key: str, tool_pages: dict[str, st.Page]) -> None:
 
 def _sidebar(current_page: st.Page, tool_pages: dict[str, st.Page]) -> None:
     with st.sidebar:
-        st.markdown("# 💎 VDB AI Suite")
+        st.markdown(
+            f"""
+<div style="display:flex; align-items:center; gap:0.75rem; margin-bottom:0.35rem;">
+  <img src="{VDB_LOGO_URL}" alt="VDB logo" style="width:2.25rem; height:2.25rem;" />
+  <div style="font-size:1.55rem; font-weight:700;">VDB tools</div>
+</div>
+            """,
+            unsafe_allow_html=True,
+        )
         st.caption("Choose a tool and run it in this app.")
 
         st.markdown("---")
