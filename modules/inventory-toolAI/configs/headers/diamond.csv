@@ -1,0 +1,160 @@
+﻿Id,Setter name,Data type,Header variations,Created at,Updated at
+1105,gdrive_image_names,Diamond,Gdrive Image Names,2026-04-30 16:45:44 UTC,2026-04-30 16:45:44 UTC
+1104,bar_code,Diamond,bar_code,2026-04-30 16:45:44 UTC,2026-04-30 16:45:44 UTC
+939,gia_cert_category,Diamond,"Certification Category (GIA), Certification Category",2025-12-16 07:17:16 UTC,2025-12-16 07:17:16 UTC
+768,memo_percent_adjustment,Diamond,Memo Percent Adjustment,2025-05-28 11:38:27 UTC,2025-05-28 11:38:27 UTC
+767,memo_adjustment_type,Diamond,Memo Adjustment Type,2025-05-28 11:38:27 UTC,2025-05-28 11:38:27 UTC
+766,total_price_memo,Diamond,"Total Price Memo, Total Memo Price, Memo Total Price, Total Price (Memo)",2025-05-28 11:38:27 UTC,2025-08-14 13:04:49 UTC
+765,price_per_carat_memo,Diamond,"Price Per Carat Memo, Memo Price Per Carat, PPC Memo, Memo PPC, Memo P/ct, Memo Price",2025-05-28 11:38:27 UTC,2025-08-14 13:08:36 UTC
+764,discount_percent_memo,Diamond,"Discount Percent Memo, Memo Price Discount%, Memo Discount Percent, Memo Rap Discount Percent",2025-05-28 11:38:27 UTC,2025-08-14 13:09:31 UTC
+581,quantity,Diamond,quantity,2024-12-31 07:18:48 UTC,2024-12-31 07:18:48 UTC
+575,company_identifier,Diamond,CustomerID,2024-10-16 13:08:03 UTC,2024-10-16 13:08:03 UTC
+562,tier,Diamond,Tier,2024-05-12 04:53:20 UTC,2024-05-12 04:53:20 UTC
+531,cert_updated_at,Diamond,Cert Updated At,2023-06-14 11:00:11 UTC,2023-06-14 11:00:11 UTC
+526,custom_field13,Diamond,"test11,test12",2023-03-21 08:24:47 UTC,2023-03-21 08:24:47 UTC
+525,custom_field12,Diamond,"test9,test10",2023-03-21 08:24:47 UTC,2023-03-21 08:24:47 UTC
+524,custom_field11,Diamond,List Price,2023-03-21 08:24:47 UTC,2023-03-21 08:24:47 UTC
+523,custom_field10,Diamond,T DDM TARGET1,2023-03-21 08:24:47 UTC,2023-03-21 08:24:47 UTC
+522,custom_field9,Diamond,DDM TARGET1,2023-03-21 08:24:47 UTC,2023-03-21 08:24:47 UTC
+521,custom_field8,Diamond,% DDM TARGET1,2023-03-21 08:24:47 UTC,2023-03-21 08:24:47 UTC
+490,jewelry_stock_num,Diamond,"Box Lot ID, boxnumber",2023-02-24 09:06:42 UTC,2023-07-07 14:42:36 UTC
+466,cert_url_4,Diamond,"Certificate Filename 4, CertFile 4, CertFilename 4, CertificateFile 4, Certificate Link 4, CertificateImage 4, CertImage 4, File 4, CERTIMG 4, Certificate URL 4, CERTIMG_URL_4, Image Certi 4, certificate_url_4, cert_url_4, Cert Link 4, CERT URL 4, certilink4",2022-10-29 12:37:47 UTC,2023-01-30 07:18:52 UTC
+465,cert_url_3,Diamond,"Certificate Filename 3, CertFile 3, CertFilename 3, CertificateFile 3, Certificate Link 3, CertificateImage 3, CertImage 3, File 3, CERTIMG 3, Certificate URL 3, CERTIMG_URL_3, Image Certi 3, certificate_url_3, cert_url_3, Cert Link 3, CERT URL 3, certilink3",2022-10-29 12:37:47 UTC,2023-01-30 07:18:39 UTC
+464,cert_url_2,Diamond,"Certificate Filename 2, CertFile 2, CertFilename 2, CertificateFile 2, Certificate Link 2, CertificateImage 2, CertImage 2, File 2, CERTIMG 2, Certificate URL 2, CERTIMG_URL_2, Image Certi 2, certificate_url_2, cert_url_2, Cert Link 2, CERT URL 2, certilink2",2022-10-29 12:37:47 UTC,2023-01-30 07:18:24 UTC
+463,video_url_4,Diamond,"Video Link 4, Diamond Video 4, Video Url 4, VIDEO_LINK_4, VIDEO_URL_4, Video 4, VIDEOS 4, 4D File 4, View460Link 4, videolnk 4, movielink 4, VIDEOS_URL_4, Photo / Video 4, parcel link url 4, external url 4, Sarine Loupe 4, Sarine Page 4, DiamondVideoURL 4, Cloud Video Link 4, V460Link 4, Picture 4, link.vid 4, diamondImage460 4, video links 4",2022-10-29 12:37:47 UTC,2023-01-30 07:14:19 UTC
+462,video_url_3,Diamond,"Video Link 3, Diamond Video 3, Video Url 3, VIDEO_LINK_3, VIDEO_URL_3, Video 3, VIDEOS 3, 3D File 3, View360Link 3, videolnk 3, movielink 3, VIDEOS_URL_3, Photo / Video 3, parcel link url 3, external url 3, Sarine Loupe 3, Sarine Page 3, DiamondVideoURL 3, Cloud Video Link 3, V360Link 3, Picture 3, link.vid 3, diamondImage360 3, video links 3",2022-10-29 12:37:47 UTC,2023-01-30 07:14:03 UTC
+461,video_url_2,Diamond,"Video Link 2, Diamond Video 2, Video Url 2, VIDEO_LINK_2, VIDEO_URL_2, Video 2, VIDEOS 2, 3D File 2, View360Link 2, videolnk 2, movielink 2, VIDEOS_URL_2, Photo / Video 2, parcel link url 2, external url 2, Sarine Loupe 2, Sarine Page 2, DiamondVideoURL 2, Cloud Video Link 2, V360Link 2, Picture 2, link.vid 2, diamondImage360 2, video links 2",2022-10-29 12:37:47 UTC,2023-01-30 07:13:48 UTC
+460,image_url_8,Diamond,"Image Link 8, Diamond Image 8, Image Url 8, IMAGE_LINK_8, IMAGE_URL_8, Image 8, image file 8, DIAMONDIMG 8, Picture URL 8, DaylightLink 8, StoneImageLink 8, DIAMONDIMG_URL_8, Photo 8, img 8, DiamondImageURL 8, webpics 8, Link 8, ImagePath 8, Img.Link 8",2022-10-29 12:37:47 UTC,2023-01-30 06:31:26 UTC
+459,image_url_7,Diamond,"Image Link 7, Diamond Image 7, Image Url 7, IMAGE_LINK_7, IMAGE_URL_7, Image 7, image file 7, DIAMONDIMG 7, Picture URL 7, DaylightLink 7, StoneImageLink 7, DIAMONDIMG_URL_7, Photo 7, img 7, DiamondImageURL 7, webpics 7, Link 7, ImagePath 7, Img.Link 7",2022-10-29 12:37:47 UTC,2023-01-30 06:31:07 UTC
+352,tags,Diamond,Tags,2022-09-20 08:00:20 UTC,2022-09-20 08:00:20 UTC
+339,starting_bid,Diamond,"starting_bid,Starting Bid",2021-11-03 12:07:44 UTC,2021-11-03 12:07:44 UTC
+338,incremental_bid_amount,Diamond,"incremental_bid_amount,Incremental Bid Amount",2021-11-03 12:07:44 UTC,2021-11-03 12:07:44 UTC
+330,scs_climate_neutral,Diamond,Certified Climate Neutral,2021-08-03 15:00:30 UTC,2021-08-03 15:00:30 UTC
+329,scs_sustainable,Diamond,Certified Sustainability Rated,2021-08-03 14:58:56 UTC,2021-08-03 14:58:56 UTC
+325,item_tag,Diamond,"Featured, Tag",2021-06-01 05:50:26 UTC,2021-06-01 05:51:29 UTC
+324,max_quantity,Diamond,Max Quantity,2021-06-01 05:50:26 UTC,2023-08-24 18:19:17 UTC
+322,short_title,Diamond,"Short Title, Short Description, PRODUCT DESCRIPTION",2021-05-27 14:51:30 UTC,2021-06-07 09:04:21 UTC
+275,diamond_type,Diamond,"Type, Investment Grade",2021-04-19 15:17:54 UTC,2021-04-20 18:40:33 UTC
+272,image_url_6,Diamond,"Image Link 6, Diamond Image 6, Image Url 6, IMAGE_LINK_6, IMAGE_URL_6, Image 6, image file 6, DIAMONDIMG 6, Picture URL 6, DaylightLink 6, StoneImageLink 6, DIAMONDIMG_URL_6, Photo 6, img 6, DiamondImageURL 6, webpics 6, Link 6, ImagePath 6, Img.Link 6",2020-11-07 15:15:07 UTC,2023-01-30 06:30:27 UTC
+271,image_url_5,Diamond,"Image Link 5, Diamond Image 5, Image Url 5, IMAGE_LINK_5, IMAGE_URL_5, Image 5, image file 5, DIAMONDIMG 5, Picture URL 5, DaylightLink 5, StoneImageLink 5, DIAMONDIMG_URL_5, Photo 5, img 5, DiamondImageURL 5, webpics 5, Link 5, ImagePath 5, Img.Link 5",2020-11-07 15:15:07 UTC,2023-01-30 06:30:07 UTC
+270,image_url_4,Diamond,"Image Link 4, Diamond Image 4, Image Url 4, IMAGE_LINK_4, IMAGE_URL_4, Image 4, image file 4, DIAMONDIMG 4, Picture URL 4, DaylightLink 4, StoneImageLink 4, DIAMONDIMG_URL_4, Photo 4, img 4, DiamondImageURL 4, webpics 4, Link 4, ImagePath 4, Img.Link 4",2020-11-07 15:15:07 UTC,2023-01-30 06:29:43 UTC
+269,image_url_3,Diamond,"Image Link 3, Diamond Image 3, Image Url 3, IMAGE_LINK_3, IMAGE_URL_3, Image 3, image file 3, DIAMONDIMG 3, Picture URL 3, DaylightLink 3, StoneImageLink 3, DIAMONDIMG_URL_3, Photo 3, img 3, DiamondImageURL 3, webpics 3, Link 3, ImagePath 3, Img.Link 3",2020-11-07 15:15:07 UTC,2023-01-30 06:29:25 UTC
+268,image_url_2,Diamond,"Image Link 2, Diamond Image 2, Image Url 2, IMAGE_LINK_2, IMAGE_URL_2, Image 2, image file 2, DIAMONDIMG 2, Picture URL 2, DaylightLink 2, StoneImageLink 2, DIAMONDIMG_URL_2, Photo 2, img 2, DiamondImageURL 2, webpics 2, Link 2, ImagePath 2, Img.Link 2, additional_image",2020-11-07 15:15:07 UTC,2024-02-02 05:28:13 UTC
+267,image_url_1,Diamond,"Image Link 1, Diamond Image 1, Image Url 1, IMAGE_LINK_1, IMAGE_URL_1, Image 1, imagefile_1, DIAMONDIMG 1, Picture URL 1, Image Link, Diamond Image, Image Url, IMAGE_LINK, IMAGE_URL, Image, image file, DIAMONDIMG, Picture URL, DaylightLink, StoneImageLink, DIAMONDIMG_URL, Photo, img, DiamondImageURL, webpics, Link, ImagePath, Img.Link, stillPhotoUrl, ViewImage, Images, interchange_threed_link, Image#URL, ",2020-11-07 15:15:07 UTC,2024-12-18 10:39:50 UTC
+266,color_inclusion,Diamond,"Color Inclusion, Color_Inclusion",2020-11-04 10:43:00 UTC,2020-11-07 15:11:32 UTC
+265,investment_grades,Diamond,"Investment Grades, Investment Grade Diamonds",2020-11-04 10:43:00 UTC,2020-11-04 10:43:00 UTC
+264,price_date,Diamond,pricedate,2020-11-04 10:43:00 UTC,2020-11-07 15:10:20 UTC
+263,certificate_date,Diamond,"CertificateDate, interchange_certificate_date",2020-11-04 10:43:00 UTC,2023-10-19 08:04:15 UTC
+262,clarity_sequence_no,Diamond,Clarity SequenceNo,2020-11-04 10:43:00 UTC,2020-11-04 10:43:00 UTC
+261,color_sequence_no,Diamond,Color SequenceNo,2020-11-04 10:42:59 UTC,2020-11-04 10:42:59 UTC
+260,shape_sequence_no,Diamond,Shape SequenceNo,2020-11-04 10:42:59 UTC,2020-11-04 10:42:59 UTC
+259,new_arrival_date,Diamond,"NewArrivalDate, Arrival Date",2020-11-04 10:42:59 UTC,2021-11-03 10:36:29 UTC
+258,stone_detail_url,Diamond,"Stone Detail URL, STONE_DETAIL_URL",2020-11-04 10:42:59 UTC,2020-11-07 15:05:38 UTC
+257,live_rapa_rate,Diamond,"liveraparate, RapaRate, Rapnet Rate, Rapnet Price Per Carat, Rap Price/Ct",2020-11-04 10:42:59 UTC,2023-02-27 13:30:03 UTC
+256,carat_group_seq_no,Diamond,"Carat Group SequenceNo, CARATGROUP_SEQNO",2020-11-04 10:42:59 UTC,2020-11-07 15:04:57 UTC
+255,carat_group,Diamond,CARATGROUP,2020-11-04 10:42:58 UTC,2020-11-07 15:12:46 UTC
+254,stock_status,Diamond,StockStatus,2020-11-04 10:42:58 UTC,2020-11-07 15:12:38 UTC
+253,original_stone_no,Diamond,"Original Stock Number, Original_Stone_No",2020-11-04 10:42:58 UTC,2020-11-07 15:03:35 UTC
+252,is_online,Diamond,Is Online,2020-11-04 10:42:58 UTC,2020-11-04 10:42:58 UTC
+251,natts_code,Diamond,"Natts, Natts_Code",2020-11-04 10:42:58 UTC,2020-11-07 15:02:30 UTC
+250,intensity_black_code,Diamond,"Intensity Blk, Intensity_blk_Code",2020-11-04 10:42:58 UTC,2020-11-07 15:02:00 UTC
+249,fm,Diamond,FM,2020-11-04 10:42:58 UTC,2020-11-04 10:42:58 UTC
+248,lab_sequence_no,Diamond,Lab SequenceNo,2020-11-04 10:42:58 UTC,2020-11-04 10:42:58 UTC
+247,dor,Diamond,"Dor, Diamond Origin Report",2020-11-04 10:42:57 UTC,2024-05-03 08:58:12 UTC
+246,inclusion_pattern,Diamond,"Inclusion Pattern, Inclusion_Pattern",2020-11-04 10:42:57 UTC,2020-11-07 14:59:53 UTC
+245,indented_natural,Diamond,Indented Natural,2020-11-04 10:42:57 UTC,2020-11-04 10:42:57 UTC
+244,internal_graining,Diamond,"Internal Graining, internalgrainingCode",2020-11-04 10:42:57 UTC,2020-11-07 14:58:33 UTC
+243,surface_graining,Diamond,"Surface Graining, surfacegrainingCode",2020-11-04 10:42:57 UTC,2020-11-07 14:56:00 UTC
+242,key_to_symbol,Diamond,"KYS, Key To Symbol, KeyToSymbols",2020-11-04 10:42:57 UTC,2020-11-07 14:54:57 UTC
+241,ownership,Diamond,Ownership,2020-11-04 10:42:57 UTC,2020-11-04 10:42:57 UTC
+240,pavallion_open,Diamond,"Pavallion Open, Pavilion_open",2020-11-04 10:42:56 UTC,2020-11-07 14:53:16 UTC
+239,girdle_open,Diamond,"Girdle Open, Girdle_open",2020-11-04 10:42:56 UTC,2020-11-07 14:52:56 UTC
+238,crown_open,Diamond,"Crown Open, Crown_open",2020-11-04 10:42:56 UTC,2020-11-07 14:52:37 UTC
+237,table_open,Diamond,"Table Open, Table_open",2020-11-04 10:42:56 UTC,2020-11-07 14:52:13 UTC
+236,rapnet_price,Diamond,Rap Price,2020-11-04 10:42:56 UTC,2020-11-11 08:51:22 UTC
+235,table_inclusion,Diamond,"Table Inclusion, TableIncCode",2020-11-04 10:42:27 UTC,2020-11-07 14:47:45 UTC
+234,location_of_black,Diamond,Location Of Black,2020-11-04 05:59:37 UTC,2020-11-04 05:59:37 UTC
+233,luster,Diamond,"luster, Lustercode, LUS",2020-11-04 05:59:37 UTC,2024-11-14 08:52:29 UTC
+232,tinge,Diamond,"Tinge, TingeCode",2020-11-04 05:59:37 UTC,2020-11-07 14:44:08 UTC
+231,growth_type,Diamond,"LG Type, Growth Type, Growth_Type, DiamondType, Stone Type",2020-11-04 05:59:37 UTC,2024-11-15 12:56:16 UTC
+230,share_access,Diamond,Share Access,2020-10-13 10:51:17 UTC,2020-10-13 10:51:17 UTC
+228,parcel_carat_range,Diamond,"Carat Range, Size Range, Weight Range, Average Carat, Parcel Carat Range",2020-06-12 12:20:42 UTC,2020-07-29 11:31:20 UTC
+227,layout,Diamond,Layout,2020-06-12 12:20:42 UTC,2020-06-12 12:20:42 UTC
+226,pair_stock_num,Diamond,"Similar Stock, Similar Stock ID, Stock Number for Matching Pair, Pair Stock Number, MatchedPairStockNo, MatchedPairStockNum, MatchedPairStockNumber, Matching Stock Num, MatchingPair, MatchingStockNo, MatchingVenderStockNumber, PairStock, PairStockNum, matchingpairstockref, pair_stock_num
+
+",2020-06-10 06:47:42 UTC,2020-06-18 11:14:11 UTC
+187,country_of_origin,Diamond,"Origin, Country of Origin, Country Origin, Origin Country, interchange_origin",2019-10-29 08:37:47 UTC,2023-10-19 08:18:16 UTC
+186,brand,Diamond,"Brand, interchange_brand",2019-10-29 08:37:47 UTC,2023-10-19 05:40:57 UTC
+185,hearts_and_arrows,Diamond,"H&A, Hearts and Arrows, H_A",2019-10-23 10:10:16 UTC,2023-10-27 05:11:31 UTC
+184,lab_grown,Diamond,lab grown,2019-10-23 10:10:16 UTC,2019-10-23 10:10:16 UTC
+151,custom_field7,Diamond,"Previewable, Consignment",2019-10-03 10:26:07 UTC,2019-10-24 10:08:23 UTC
+132,custom_field6,Diamond,"Notes, Parcel Name",2019-05-12 00:09:30 UTC,2019-09-03 08:17:42 UTC
+131,custom_field5,Diamond,Department,2019-05-12 00:09:30 UTC,2023-06-01 08:17:03 UTC
+130,custom_field4,Diamond,"Custom Location, BMH Company, Memo Company, Account Location",2019-05-12 00:09:30 UTC,2021-02-03 13:15:57 UTC
+129,custom_field3,Diamond,"Item Country, OutPrice",2019-05-11 23:59:10 UTC,2021-02-05 08:34:39 UTC
+128,custom_field2,Diamond,"Cost Price, Cost",2019-05-11 23:59:10 UTC,2021-02-03 12:37:11 UTC
+127,custom_field1,Diamond,"Cost %, Cost Percent, Cost -%, ListCostPercent",2019-05-11 23:59:10 UTC,2021-02-05 13:54:23 UTC
+63,camera_ref,Diamond,Camera Reference,2017-06-30 16:04:53 UTC,2017-06-30 16:04:53 UTC
+62,camera_type,Diamond,"Camera Type, camera_type",2017-06-30 16:04:53 UTC,2018-10-05 12:53:33 UTC
+61,video_url_1,Diamond,"Video Link, Diamond Video, Video Url, VIDEO_LINK, VIDEO_URL, Video, VIDEOS, 3D File, View360Link, videolnk, movielink, VIDEOS_URL, Photo / Video, parcel link url, external url, Sarine Loupe, Sarine Page, DiamondVideoURL, Cloud Video Link, V360Link, Picture, link.vid,diamondImage360, video links, interchange_video_link, Video Link1; ViewVideo, Video#URL; VideoLink",2017-06-30 16:04:53 UTC,2025-07-24 22:10:12 UTC
+59,inclusion_open,Diamond,"Open Inclusion, inclusion_open",2017-06-30 16:04:53 UTC,2018-10-05 12:52:44 UTC
+58,inclusion_black,Diamond,"Black Inclusion, inclusion_black, interchange_black_inclusion",2017-06-30 16:04:53 UTC,2023-10-19 08:13:11 UTC
+57,shade,Diamond,"Shade,Color Shade, interchange_shade",2017-06-30 16:04:53 UTC,2023-10-19 08:03:38 UTC
+56,star_length,Diamond,"Star Length, star_length, interchange_star_length",2017-06-30 16:04:53 UTC,2023-10-18 17:05:26 UTC
+55,eye_clean,Diamond,"Eye Clean, eye_clean, interchange_eyeclean",2017-06-30 16:04:53 UTC,2023-10-19 08:14:25 UTC
+54,comments,Diamond,"Member Comments, Comments, Description, Remarks, Member Comment, COMT, Description/Comments, Comment, Note, commts",2017-06-30 16:04:53 UTC,2019-05-27 05:36:45 UTC
+53,total_sales_price,Diamond,"Total Price, AMOUNT, EST AMT, Price/Pcs, Vendor Price, amt, total_sales_price, Total $, Total Amount$, RAP AMT ($), Final Amt, T. Amt, TOTAL US$, Total___, netamt, total, Total sales price, $/stone, Net Total Doll, TDDMTARGET, final_price, NET_VALUE, usdTotal, Price 18KT USD, Buy Total Price",2017-06-30 16:04:53 UTC,2025-08-14 13:12:54 UTC
+52,sell_price,Diamond,"Sell Price, sell_price",2017-06-30 16:04:53 UTC,2018-10-05 12:49:16 UTC
+51,trade_show,Diamond,Trade Show,2017-06-30 16:04:53 UTC,2017-06-30 16:04:53 UTC
+50,laser_inscription,Diamond,"Laser Inscription, inscription, interchange_inscription",2017-06-30 16:04:53 UTC,2023-10-19 08:10:24 UTC
+49,pavilion_angle,Diamond,"Pavilion Angle, PavillionAngle, PA, pavang ,PavAngle, pavilion_angle, interchange_pavilion_angle, pavalionAngle",2017-06-30 16:04:53 UTC,2025-02-16 15:42:54 UTC
+48,crown_angle,Diamond,"Crown Angle, CR >, CA, crownang, CRANG, interchange_crown_angle, CR_ANGLE, crown_angle",2017-06-30 16:04:53 UTC,2024-03-19 06:16:21 UTC
+47,meas_depth,Diamond,"Measurements Depth, Meas Depth, height, Measurements3, HT, Meas 3, M3, interchange_depth, meas_depth
+",2017-06-30 16:04:53 UTC,2024-03-19 06:15:34 UTC
+46,meas_width,Diamond,"Measurements Width, Meas Width, Width, Measurements2, WD, WDH, Max Diameter, meas_width, WID, Meas 2, M2, interchange_width",2017-06-30 16:04:53 UTC,2023-10-16 08:34:54 UTC
+45,meas_length,Diamond,"Measurements Length, Meas Length, Length, Measurements1, LN, LNTH, Min Diameter, meas_length, Meas 1, M1, interchange_length
+",2017-06-30 16:04:53 UTC,2023-10-16 08:34:03 UTC
+44,bgm,Diamond,"BGM, interchange_bgm",2017-06-30 16:04:53 UTC,2023-10-19 05:36:18 UTC
+43,culet_condition,Diamond,"Culet Condition, culet_condition, trade_show",2017-06-30 16:04:53 UTC,2018-10-05 12:48:34 UTC
+42,fancy_color_secondary_color,Diamond,"Fancy Color Secondary, fancy_color_secondary_color, Fancy Secondary Color",2017-06-30 16:04:53 UTC,2019-04-24 06:01:21 UTC
+41,size,Diamond,"Weight, Carat, CaratSize, CaratWeight, CtSize, CtWeight, Sz, Size, CRTWT, CT, Carats, CurrentWeight, CTS, crt, Wet, WT, interchange_weight, AvailableForSale, Total Weight",2017-06-30 16:04:53 UTC,2024-11-13 11:07:17 UTC
+40,stock_num,Diamond,"Vendor Stock Number, ReferenceNum, ReferenceNumber, Stock, Stock Num, Stock Number, Stock_No, StockNo, VenderStockNumber, Stock Name, Supplier Stock Ref, STK_IDN, Vendor Stock, StoneID, Lot no., Stone No, SerialNumber, Lot#, Pid, stno, No., Parcel, Ref#, SR.,Vendor SKU, Stock #, Stock Id,STONE_ID, Client Ref, Stock_Num, packet no, sku, Client_Ref_No, pktno, ceria, ID NUMBER, Packet Id, lot-seria, lot number, stone_x0020_id, Item no, StockRef,productId, Lot ID, lot_id, interchange_code, PACKET_NO, stock_id, stock_idn, Stock#ID",2017-06-30 16:04:53 UTC,2025-03-11 11:40:19 UTC
+39,treatment,Diamond,"Treatment, Enhance, Enhancement, Enhancements, Enhance-ments, Treatments, EnhancementTypes, interchange_irradiated",2017-06-30 16:04:52 UTC,2023-10-19 08:11:00 UTC
+38,table_percent,Diamond,"Table Percent, Table, TablePct, Tbl, TAB Percent, TablePer, Table%, StoneTable, Tab, Table Perecent, TA, TA%, dtable, Table Percentage, Tab_x0025_, Tabl, interchange_table_pct, table_percent, tablePerc, TABLE_PER",2017-06-30 16:04:52 UTC,2025-04-01 08:58:27 UTC
+37,symmetry,Diamond,"Symmetry, Sym, Symetry, Sym-metry, RSymmetryID, Symm, Symmetry_Code, Symt, interchange_symmetry",2017-06-30 16:04:52 UTC,2023-10-19 07:47:08 UTC
+36,state,Diamond,"State1, State, State1 Location",2017-06-30 16:04:52 UTC,2023-06-13 14:54:24 UTC
+35,polish,Diamond,"Polish, Finish, Pol, PO,RPolishID, Polish_Code, Pols, interchange_polish",2017-06-30 16:04:52 UTC,2023-10-19 07:46:36 UTC
+34,pavilion_depth,Diamond,"Pavilion Depth, Pavil, Pavilion, Pavilion Percent, PavilionPct, PavillionDepth, pav dep, PD, pavdp%, Pav. Depth, interchange_pavilion_depth, pavilion_depth, pavalionDepth",2017-06-30 16:04:52 UTC,2025-02-16 15:43:20 UTC
+33,parcel_stones,Diamond,"Parcel Stones, StoneCount, Stones, parcel_stones, Parcel Stone Count, ParcelOrStone",2017-06-30 16:04:52 UTC,2023-06-01 08:13:52 UTC
+32,shape,Diamond,"Shape, Shp, cut(shape), SH, shp_name, Shap, Shape_Code, ShapeID, interchange_shapecode",2017-06-30 16:04:52 UTC,2023-10-19 08:08:17 UTC
+31,pair,Diamond,"Pair, Pairs",2017-06-30 16:04:52 UTC,2020-06-18 11:13:17 UTC
+30,milky,Diamond,"Milky, Cloudy",2017-06-30 16:04:52 UTC,2017-06-30 16:04:52 UTC
+29,measurement,Diamond,"Measurements, Dimensions, Meas, Measurement, Measurement1, LxWxH, L*W*H, L-W-H, Dimension, DIAMTER, MIXMEASUREMENT, Msurmnt, measurment",2017-06-30 16:04:52 UTC,2019-06-24 11:27:46 UTC
+28,lab,Diamond,"Lab, Laboratory, gradinglab, Cr_name, Cert Lab, lab_code, Gemology Institute, LabAccountID, interchange_labcode",2017-06-30 16:04:52 UTC,2023-10-19 05:38:17 UTC
+27,set_matched_pair_separable,Diamond,"Is Matched Pair Separable, IsPairSeparable, PairSep, PairSeparable, Separable, Separatable, pairisseperable, is_matched",2017-06-30 16:04:52 UTC,2018-12-12 10:06:38 UTC
+26,girdle_min,Diamond,"Girdle Thin, Girdle, Girdle Min, Girdle(thinnest), girdlefrom, min grdl ,girdle_min, GirdleDesc, Gridle, grdthin, grdl, interchange_girdle, Girdle_Thin",2017-06-30 16:04:52 UTC,2023-11-15 10:42:53 UTC
+25,girdle_max,Diamond,"Girdle Thick, Girdle Max, Girdle(thickest), girdleto, max grdl, Grd_Max, Girdle_ThickDisplay, grdthick, maxgirdle",2017-06-30 16:04:52 UTC,2018-12-20 06:31:28 UTC
+24,girdle_condition,Diamond,"Girdle Condition, GirdleCon, girdle_condition,GIRDLE-COND, RGirdleID, interchange_girdle_condition",2017-06-30 16:04:52 UTC,2023-10-19 05:54:17 UTC
+23,girdle_percent,Diamond,"Girdle Percent, GirdlePct, GirdleThicknessInPct, grdl %, Girdle %, girdle_per, interchange_girdle_pct, girdlePerc",2017-06-30 16:04:52 UTC,2025-02-16 15:43:56 UTC
+22,fluor_intensity,Diamond,"Fluorescence Intensity, Fluoresence Intensity, Flr, FlrIntensity, Fluo Intensity, Fluor, Fluor Intensity, Fluorescence, Fluoresence, FLOR, FL, Flour, RFluorescenceID, Flo, fluro, Flourescent, FLOURESENCE, fluor_intensity, FLUO, fluorescent, fluorescence_code, flu, fls, flou, FLINTENSITY, interchange_fluorescence, LFluorescenceID, fluorescence_intensity",2017-06-30 16:04:52 UTC,2023-12-07 12:27:07 UTC
+21,fluor_color,Diamond,"Fluorescence Color, Fluoresence Color, FlrColor, Fluo Color, Fluor Color, FLColor, Fl_Co, fluor_color, fluorescence_color, flucolor,interchange_fluorescence_color, LFluorescenceColorID",2017-06-30 16:04:52 UTC,2023-10-23 18:22:06 UTC
+20,fancy_color_overtone,Diamond,"Fancy Color Overtone, Fancy Color Overtones, FCO, FancyOvertone, interchange_fancy_color_overtone, fancy_color_overtone",2017-06-30 16:04:52 UTC,2023-10-26 08:38:41 UTC
+19,fancy_color_intensity,Diamond,"Fancy Color Intensity, FC-Intensity, FCIntensity, Intensity, naturalfancyintensity, fancy_color_intensity, FC Density, fancy_intensity_code, FancyIntensity, interchange_fancy_color_intensity",2017-06-30 16:04:52 UTC,2023-10-19 05:34:30 UTC
+18,fancy_color_dominant_color,Diamond,"Fancy Color, FancyColorMainBody, FC-Main Body, FCMainBody, FCColor, NATURAL FANCY COLOR, FCOLOR, Fancy Color Grade, FancyColorFullName, fancy_color_code, Fancy, FancyColorMain, interchange_fancy_color, fancy_color, fancy_color_dominant_color, Fancy Color Dominant Color",2017-06-30 16:04:52 UTC,2023-12-11 11:14:56 UTC
+17,depth_percent,Diamond,"Depth Percent, DepthPct, Dpth, TotalDepth, DEP Percent, DP, TotDepth, T.DEPTH, Depth, Depth*, Depth %, Dep%, Depth Perecent, TD %, depthper, TD, Depth (%), Depth Percentage, TotDepth_x0020__x0025_, Dept, interchange_depth_pct1, depth_percent, depthPerc, DEPTH_PER",2017-06-30 16:04:52 UTC,2025-04-01 08:57:55 UTC
+16,cut,Diamond,"Cut Grade, Cut, Make, make(cutgrade),RCutGradeID, Cut_Code, Final Cut, interchange_cutgrade",2017-06-30 16:04:52 UTC,2023-09-28 10:06:36 UTC
+15,culet_size,Diamond,"Culet Size, Culet, culet_Size, CuletGrade, Cullet, CulletGrade, RCuletId, CUL, CU_Name,cutlet, interchange_culet",2017-06-30 16:04:52 UTC,2024-03-19 06:18:40 UTC
+14,crown_height,Diamond,"Crown Height, Crown, Crown Percent, CrownPct, CR HGT, cwn hgt, CH, crownheight%, CRHEIGHT, Crown HT, interchange_crown_height, crown_height",2017-06-30 16:04:52 UTC,2024-03-19 06:16:43 UTC
+13,cert_comment,Diamond,"Cert Comment, Lab Comment, Certificate Comment, Laboratory Comment, Cert Comments, cert_commen, Lab Comments, interchange_certificate_notes",2017-06-30 16:04:52 UTC,2023-10-19 08:03:08 UTC
+12,cash_discount,Diamond,"Cash Discount Percent, Index Discount Percent, cash_discount",2017-06-30 16:04:52 UTC,2018-10-05 12:36:17 UTC
+11,country,Diamond,"Country, Country Location, LotCountry, Country of Manufacture, Location, LOC, Location Name, Stone Location Country",2017-06-30 16:04:52 UTC,2020-05-07 05:37:26 UTC
+10,color,Diamond,"Color, Colr, Colour, COL, CO, ColorID, Color_Code, interchange_colorcode",2017-06-30 16:04:51 UTC,2023-10-19 08:07:44 UTC
+9,clarity,Diamond,"Clarity, Clar, Clearity, Purity,CLRT,PU,CLA,ClarityId, cal_name,CLR, Clarity_Code, interchange_claritycode",2017-06-30 16:04:51 UTC,2023-10-19 05:37:48 UTC
+8,city,Diamond,"City, City Location,",2017-06-30 16:04:51 UTC,2020-06-19 04:56:14 UTC
+7,cert_url_1,Diamond,"Certificate Filename, CertFile, CertFilename, CertificateFile, Certificate Link, CertificateImage, CertImage, File, CERTIMG, Certificate URL, CERTIMG_URL, Image Certi, certificate_url, cert_url, Cert Link, CERT URL, certilink, certificate_link, interchange_labcertificate_websitelink, CERTI_LINK, Certificate#URL",2017-06-30 16:04:51 UTC,2024-10-29 15:14:23 UTC
+6,cert_num,Diamond,"Certificate Number, Cert Num, CertID, CertificateID, CertificateNum, CmPub, Certificate, Cert Number, Certificate No, Report#, ReportNumber, ReportNo, CERTI NUMBER, GIA#, Certificate #, Rep No, LAB REPORT NO, Cert #, certificate_no, Cert, Certificate_x0020_No,Cert No, CERT_NO, Report n, interchange_certificate_no., cert_num, REPORT_NO, certificate_number, Report, certiNo",2017-06-30 16:04:51 UTC,2025-02-16 15:39:27 UTC
+5,inclusion_center,Diamond,"Center Inclusion, Central Inclusion, interchange_center_inclusion",2017-06-30 16:04:51 UTC,2023-10-19 08:13:46 UTC
+4,csv_discount,Diamond,"Discount Percent, Discount, PctRapNetDiscount, RapnetDisc, RapnetDiscountPct, RapnetDiscPct, RapnetDpx, RapnetRapPct, RDisc, RDiscount, RDiscountPct, RDiscountPercent, RDiscPct, RDpx, RRapPct, RapNet Discount Price, Rapnet Discount, Rapnet Discount Percent, Buy Price Discount Percent, RAP DIS, List Percent, Rap%, DiscountPrice, Discounts, Rap Discount %, PricePerCaratDiscount, DISC, List%, Disc%, Discont%, %Rap, %Discount, % Off RAP, disc(%), PriceFromRap, % below, RAP_DIS, Vendor Disc, Cash Price Discount %, Discount %, Cash Discount, Dis, Off%, % off RAP List, RAP DISC, discper, RapNet  Discount %, % Below (-), BACK, Discount Percentage, Disc_x0020__x0025_, %DDMTARGET, interchange_markup1, Buy Rap Discount Percent",2017-06-30 16:04:51 UTC,2025-08-14 13:23:46 UTC
+3,price_per_carat,Diamond,"Price, AskingPrice, PerCarat, Per Ct, Prc, Price/PC, PR/CT, Price/Crt, Price/Ct, PricePerCarat, PricePerCt, Px, Selling Price, Buy Price, AskingPricePerCarat, Rate, Per Carat $, RapnetAskingPrice, PPC, $/cts, Price/Carat, Unit Price, Price $/Ct, Price/Cts, S.P., Final Rate, ShowOnRapnet, cash price, Amt/crt, Vendor Price Per Carat, Price/Carat$, PRICE_PER_CRT, RTE, PER CAEAR PRICE, c__cts_, $/ct, RAP PPC ($), P/CT US$, netrate, PRC/CRT, Sale5, New $/ct, Price_x002F_Cts, pcs, After Dic Price,P/CT, Rapnet Price, DDMTARGET, price_per_caret, interchange_price1, NET_RATE, price_per_carat, interchange_price2, interchange_price3, Buy P/ct",2017-06-30 16:04:51 UTC,2025-08-14 13:13:49 UTC
+2,cash_price,Diamond,"Index Price, Index Asking Price, cash_price",2017-06-30 16:04:51 UTC,2018-10-05 12:22:59 UTC
+1,availability,Diamond,"Availability, Avail, Available, Status, On Hand, IsActive, AV, stonestatus, Web Status, Stock Type, Guaranteed Availability, LotStatusID, STONE_STATUS, Availibilit, ProductStatus",2017-06-30 16:04:51 UTC,2024-11-06 21:18:45 UTC

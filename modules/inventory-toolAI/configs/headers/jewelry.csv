@@ -1,0 +1,178 @@
+﻿Id,Setter name,Data type,Header variations,Created at,Updated at
+1110,gdrive_image_names,Jewelry,Gdrive Image Names,2026-04-30 16:45:44 UTC,2026-04-30 16:45:44 UTC
+1071,match_group_id,Jewelry,"match_group_id, match group id",2026-02-26 09:55:48 UTC,2026-02-26 09:55:48 UTC
+1038,allow_backorder,Jewelry,"allow_backorder, allowbackorder",2026-01-22 08:01:58 UTC,2026-01-22 08:01:58 UTC
+972,display_note,Jewelry,"Display_notes, Display Note, Display Notes, Shipping Information, Shipping_Information,Shipping Info",2026-01-22 07:49:33 UTC,2026-01-22 07:49:33 UTC
+839,milky_ic,Jewelry,Available Config Field 20,2025-03-07 14:43:28 UTC,2025-03-07 14:43:28 UTC
+838,shade_ic,Jewelry,Available Config Field 19,2025-03-07 14:43:28 UTC,2025-03-07 14:43:28 UTC
+837,milky,Jewelry,Config Field 20,2025-09-16 06:08:19 UTC,2025-09-16 06:08:19 UTC
+836,shade,Jewelry,Config Field 19,2025-09-16 06:08:18 UTC,2025-09-16 06:08:18 UTC
+835,memo_percent_adjustment,Jewelry,Memo Percent Adjustment,2025-09-16 06:08:16 UTC,2025-09-16 06:08:16 UTC
+834,memo_adjustment_type,Jewelry,Memo Adjustment Type,2025-09-16 06:08:15 UTC,2025-09-16 06:08:15 UTC
+801,side_stone_size_ic,Jewelry,Available Side Stone Sizes,2025-03-07 14:43:28 UTC,2025-03-07 14:43:28 UTC
+698,bar_code,Jewelry,barcode No,2025-04-23 11:32:20 UTC,2025-04-23 11:32:20 UTC
+665,rapnet_price,Jewelry,Center Stone Price,2020-11-04 10:42:56 UTC,2020-11-04 10:42:56 UTC
+632,config_field_18_ic,Jewelry,Available Config Field 18,2025-03-07 14:43:28 UTC,2025-03-07 14:43:28 UTC
+631,config_field_17_ic,Jewelry,Available Config Field 17,2025-03-07 14:42:55 UTC,2025-03-07 14:42:55 UTC
+630,config_field_16_ic,Jewelry,Available Config Field 16,2025-03-07 14:42:40 UTC,2025-03-07 14:42:40 UTC
+597,config_field_18,Jewelry,Config Field 18,2025-03-07 12:05:25 UTC,2025-03-07 12:05:25 UTC
+596,config_field_17,Jewelry,"Config Field 17, center2 Cert Num, ParcelID",2025-03-07 12:05:25 UTC,2026-01-29 07:06:06 UTC
+595,config_field_16,Jewelry,Config Field 16,2025-03-07 12:05:25 UTC,2025-03-07 12:05:25 UTC
+593,share_access,Jewelry,Share Access,2025-01-13 10:51:17 UTC,2020-10-13 10:51:17 UTC
+592,config_field_15_ic,Jewelry,Available Config Field 15,2024-12-31 07:37:38 UTC,2024-12-31 07:37:38 UTC
+591,config_field_14_ic,Jewelry,Available Config Field 14,2024-12-31 07:37:37 UTC,2024-12-31 07:37:37 UTC
+590,config_field_13_ic,Jewelry,Available Config Field 13,2024-12-31 07:37:36 UTC,2024-12-31 07:37:36 UTC
+589,config_field_12_ic,Jewelry,"Available Config Field 12, Available Band Type",2024-12-31 07:37:35 UTC,2025-01-03 07:21:07 UTC
+588,config_field_11_ic,Jewelry,"Available Config Field 11, Available Length",2024-12-31 07:37:34 UTC,2025-01-02 12:34:41 UTC
+587,config_field_15,Jewelry,Config Field 15,2024-12-31 07:18:48 UTC,2024-12-31 07:18:48 UTC
+586,config_field_14,Jewelry,Config Field 14,2024-12-31 07:18:48 UTC,2024-12-31 07:18:48 UTC
+585,config_field_13,Jewelry,Config Field 13,2024-12-31 07:18:48 UTC,2024-12-31 07:18:48 UTC
+584,config_field_12,Jewelry,"Config Field 12, Band Type, center2 Lab",2024-12-31 07:18:48 UTC,2025-11-12 09:06:08 UTC
+583,config_field_11,Jewelry,"Config Field 11, Chain Length, center2 Symmetry",2024-12-31 07:18:48 UTC,2025-11-12 09:05:53 UTC
+580,center_measurement_ic,Jewelry,Center Stone Measurements HWD,2024-12-04 02:37:00 UTC,2024-12-04 02:37:00 UTC
+579,center_polish_ic,Jewelry,Request Cad,2024-12-04 02:36:58 UTC,2024-12-04 02:36:58 UTC
+578,company_identifier,Jewelry,CustomerID,2024-11-07 10:58:55 UTC,2024-11-07 10:58:55 UTC
+565,sub_type,Jewelry,"Jewelry Classification, sub_type, Sub Type, jewelry_subtype",2024-07-20 08:13:04 UTC,2025-10-13 08:58:13 UTC
+564,quantity,Jewelry,Stock Quantity,2024-06-19 09:37:32 UTC,2024-06-19 09:37:32 UTC
+561,config_field_10_ic,Jewelry,"Available Config Field 10, Available Metal Carats, Available Tone
+",2024-04-25 05:26:15 UTC,2025-04-03 06:46:59 UTC
+560,config_field_9_ic,Jewelry,"Available Config Field 9, Supported Shank Style",2024-04-25 05:26:15 UTC,2024-06-27 06:54:02 UTC
+559,config_field_8_ic,Jewelry,"Available Config Field 8, Available Center Stone Colors, Supported Wedding Band, Available Burnished Gemstones",2024-04-25 05:26:15 UTC,2024-10-21 10:01:54 UTC
+558,config_field_7_ic,Jewelry,"Available Config Field 7, Available Halo",2024-04-25 05:26:15 UTC,2025-01-02 12:34:35 UTC
+557,config_field_6_ic,Jewelry,"Available Config Field 6, Available Shank Details, Supported Shank Details, Available Shank Accent",2024-04-25 05:26:15 UTC,2024-10-21 09:55:18 UTC
+556,config_field_5_ic,Jewelry,"Available Config Field 5, Available Diamond Accent, Supported Shank Thickness",2024-04-25 05:26:15 UTC,2024-06-26 10:33:25 UTC
+555,config_field_4_ic,Jewelry,"Available Config Field 4, Available Center Setting",2024-04-25 05:26:15 UTC,2024-05-02 17:27:26 UTC
+554,config_field_3_ic,Jewelry,"Available Config Field 3, Available Prongs, Available Tone 2",2024-04-25 05:26:15 UTC,2024-10-21 10:46:27 UTC
+553,config_field_10,Jewelry,"Config Field 10, 3D File Name, Metal Carats, Tone, center2 Polish
+",2024-04-25 05:25:52 UTC,2025-11-12 09:05:23 UTC
+552,config_field_9,Jewelry,"Config Field 9, Shank Style, center2 Cut",2024-04-25 05:25:52 UTC,2025-11-12 09:04:57 UTC
+551,config_field_8,Jewelry,"Config Field 8, Center Stone Colors, Wedding Band, Burnished Gemstones, center2 Clarity",2024-04-25 05:25:52 UTC,2025-11-12 09:04:26 UTC
+550,config_field_7,Jewelry,"Config Field 7, Halo, Halo Shape, center2 Color",2024-04-25 05:25:52 UTC,2025-11-12 09:04:07 UTC
+549,config_field_6,Jewelry,"Config Field 6, Shank Details, Shank Accent, center2 Carat Weight, J Size",2024-04-25 05:25:52 UTC,2025-12-10 06:32:44 UTC
+548,config_field_5,Jewelry,"Config Field 5, Diamond Accent, Shank Thickness, center2 Shape",2024-04-25 05:25:52 UTC,2025-11-12 09:03:14 UTC
+547,config_field_4,Jewelry,"Config Field 4, Center Setting, center2 type",2024-04-25 05:25:51 UTC,2025-11-12 09:02:50 UTC
+546,config_field_3,Jewelry,"Config Field 3, Prongs, Tone 2, gram weight",2024-04-25 05:25:51 UTC,2025-10-14 12:21:33 UTC
+545,product_description,Jewelry,product_description,2024-02-08 12:50:21 UTC,2024-02-08 12:50:21 UTC
+544,product_title,Jewelry,product_title,2024-02-08 12:50:21 UTC,2024-02-08 12:50:21 UTC
+543,is_master_product,Jewelry,"is_master_product, Master Product",2024-02-08 12:50:21 UTC,2024-10-10 12:52:08 UTC
+542,three_d_enabled,Jewelry,"three_d_enabled, 3D Enabled",2024-02-08 12:50:21 UTC,2024-04-16 14:13:05 UTC
+541,center_type_ic,Jewelry,"Head Color, Available Prong Type, Available Stone Color, Available Stone Type",2023-11-24 12:21:51 UTC,2025-03-31 11:30:07 UTC
+540,meas_width_to_ic,Jewelry,Width Supported To,2023-08-11 06:07:52 UTC,2023-08-11 06:07:52 UTC
+539,meas_width_from_ic,Jewelry,Width Supported From,2023-08-11 06:07:50 UTC,2023-08-11 06:07:50 UTC
+538,meas_length_to_ic,Jewelry,Length Supported To,2023-08-11 06:07:50 UTC,2023-08-11 06:07:50 UTC
+537,meas_length_from_ic,Jewelry,Length Supported From,2023-08-11 06:07:50 UTC,2023-08-11 06:07:50 UTC
+536,config_field_2_ic,Jewelry,"Available Shank, Available Diamond Spread, Available Shank Widths, Available Metal Tone 3, Available SHANKS, Available Config Field 2",2023-08-11 06:04:14 UTC,2026-05-07 07:30:26 UTC
+535,config_field_2,Jewelry,"shank, Diamond Spread, Shank Width, Metal Tone 3, Config Field 2, model_number",2023-08-11 06:04:01 UTC,2025-11-18 13:48:17 UTC
+534,config_field_1_ic,Jewelry,"Available Head, Available Setting, Available Rings Sizes, Available Gemstone Quality, Available Metal Tone 2
+",2023-08-11 06:04:00 UTC,2024-04-11 09:58:10 UTC
+533,config_field_1,Jewelry,"head, Setting, Special Price, Rings Sizes, Gemstone Quality, Metal Tone 2",2023-08-11 06:04:00 UTC,2024-04-11 09:57:41 UTC
+532,center_size_ic,Jewelry,"Available Center Carat Weight, Available Center Stone Weight, Available Finger Size
+",2023-08-09 05:55:38 UTC,2024-04-15 07:18:24 UTC
+530,center_clarity_ic,Jewelry,"Available Diamond Quality, Available Finishes",2023-05-23 12:37:56 UTC,2024-04-11 10:29:29 UTC
+529,head_ic,Jewelry,"Available Heads, Available Comfort Fit",2023-05-15 14:42:39 UTC,2024-04-15 07:18:50 UTC
+528,size_ic,Jewelry,"Available Total Carat Weight, Available Carat Weights, Available Diamond Carats, Available Carat Weight Per Stone, Available Carats, Available Stone Sizes, Available CTWs, Available CT WT /PC",2023-05-01 13:29:52 UTC,2024-04-09 20:19:34 UTC
+527,pair_stock_num,Jewelry,"Master Stock Number, Main Stock Number, Master Style, Master Stock, parent_sku, Master Stock#",2023-05-01 13:27:20 UTC,2023-12-21 08:25:34 UTC
+514,custom_field13,Jewelry,"test11,test12",2023-03-21 08:23:27 UTC,2023-03-21 08:23:27 UTC
+513,custom_field12,Jewelry,"test9,test10, Total Retail Price, memo date",2023-03-21 08:23:27 UTC,2025-10-15 13:43:17 UTC
+512,custom_field11,Jewelry,List Price,2023-03-21 08:23:27 UTC,2023-03-21 08:23:27 UTC
+511,custom_field10,Jewelry,T DDM TARGET,2023-03-21 08:23:27 UTC,2023-03-21 08:23:27 UTC
+510,custom_field9,Jewelry,DDM TARGET,2023-03-21 08:23:27 UTC,2023-03-21 08:23:27 UTC
+509,custom_field8,Jewelry,"% DDM TARGET, Department Code",2023-03-21 08:23:27 UTC,2023-09-20 06:14:05 UTC
+489,diamond_type,Jewelry,Jewelry Types,2023-02-24 09:06:26 UTC,2023-02-24 09:06:26 UTC
+488,image_url_8,Jewelry,"Image Link 8, Diamond Image 8, Image Url 8, IMAGE_LINK_8, IMAGE_URL_8, Image 8, imagefile_8, DIAMONDIMG 8, Picture URL 8, Stone Image 8, Image File 8, ThumbnailImage 8",2023-01-25 14:02:26 UTC,2023-01-30 06:42:49 UTC
+487,image_url_7,Jewelry,"Image Link 7, Diamond Image 7, Image Url 7, IMAGE_LINK_7, IMAGE_URL_7, Image 7, imagefile_7, DIAMONDIMG 7, Picture URL 7, Stone Image 7, Image File 7, ThumbnailImage 7",2023-01-25 14:02:25 UTC,2023-01-30 06:42:39 UTC
+486,original_stone_no,Jewelry,Original Stock Number,2023-01-02 11:04:02 UTC,2023-01-02 11:04:02 UTC
+485,cert_url_4,Jewelry,"Certificate Filename 4, CertFile 4, CertFilename 4, CertificateFile 4, Certificate Link 4, CertificateImage 4, CertImage 4, File 4, CERTIMG 4",2022-10-29 12:37:48 UTC,2023-01-30 07:22:41 UTC
+484,cert_url_3,Jewelry,"Certificate Filename 3, CertFile 3, CertFilename 3, CertificateFile 3, Certificate Link 3, CertificateImage 3, CertImage 3, File 3, CERTIMG 3",2022-10-29 12:37:48 UTC,2023-01-30 07:22:28 UTC
+483,cert_url_2,Jewelry,"Certificate Filename 2, CertFile 2, CertFilename 2, CertificateFile 2, Certificate Link 2, CertificateImage 2, CertImage 2, File 2, CERTIMG 2",2022-10-29 12:37:48 UTC,2023-01-30 07:22:16 UTC
+482,video_url_4,Jewelry,"Video URL 4, Video Link 4, Video 4, 3D File 4, video_url_4",2022-10-29 12:37:48 UTC,2023-01-30 07:16:42 UTC
+481,video_url_3,Jewelry,"Video URL 3, Video Link 3, Video 3, 3D File 3, video_url_3",2022-10-29 12:37:48 UTC,2023-01-30 07:16:28 UTC
+480,video_url_2,Jewelry,"Video URL 2, Video Link 2, Video 2, 3D File 2, video_url_2",2022-10-29 12:37:48 UTC,2023-01-30 07:16:16 UTC
+426,finish_ic,Jewelry,MFG Attr 2 Code,2022-10-19 07:32:44 UTC,2022-10-19 07:32:44 UTC
+425,side_stone_quality_ic,Jewelry,SS Quality,2022-10-19 07:31:07 UTC,2023-05-23 12:37:47 UTC
+395,jewelry_type,Jewelry,"Jewelry Sub Type 2, SubCategoryID, Jewelry Sub-Category",2022-09-23 04:11:28 UTC,2025-10-13 09:02:06 UTC
+355,tags,Jewelry,"Tags, Class",2022-09-20 08:03:00 UTC,2025-09-29 08:49:02 UTC
+354,engravable,Jewelry,Engravable,2022-09-20 08:03:00 UTC,2022-09-20 08:03:00 UTC
+342,supported_center_stone_type_ic,Jewelry,Supported Center Stone Type,2022-07-05 13:37:32 UTC,2022-07-05 13:37:32 UTC
+337,new_arrival_date,Jewelry,"New Arrival Date, Arrival Date",2021-11-03 11:57:37 UTC,2021-11-03 11:57:37 UTC
+336,item_tag,Jewelry,"Featured, Item Shank Details",2021-11-03 11:57:37 UTC,2024-12-04 02:21:48 UTC
+335,shape,Jewelry,"Shape, diamond_shape, Diamond Shape",2021-08-26 13:21:18 UTC,2023-07-18 14:18:01 UTC
+334,supported_shapes_ic,Jewelry,"Supported Shape Variations, Supported Shapes Variations, Setting Supported Shapes, Available Diamond Shapes, Available Shape, Available Shapes",2021-08-19 14:39:15 UTC,2023-12-08 08:55:51 UTC
+333,supported_carat_to_ic,Jewelry,"Setting Supported Carat To, diamond_carat_max",2021-08-19 14:38:42 UTC,2023-10-25 13:41:48 UTC
+332,supported_carat_from_ic,Jewelry,"Setting Supported Carat From, diamond_carat_min",2021-08-19 14:37:40 UTC,2023-10-25 13:41:35 UTC
+331,variants_ic,Jewelry,Available Variant Stocks,2021-08-19 14:33:39 UTC,2021-08-19 14:33:39 UTC
+328,setting_supported_carat_to,Jewelry,setting_supported_carat_to,2021-06-21 09:51:36 UTC,2021-06-21 09:51:36 UTC
+327,setting_supported_carat_from,Jewelry,setting_supported_carat_from,2021-06-21 09:51:36 UTC,2021-06-21 09:51:36 UTC
+326,supported_shapes,Jewelry,"supported_shapes, Supported Shape",2021-06-21 09:51:36 UTC,2025-05-26 09:11:00 UTC
+321,custom_field7,Jewelry,Previewable,2021-05-09 16:54:31 UTC,2025-10-15 13:42:59 UTC
+320,custom_field6,Jewelry,"Notes, ON HAND MD",2021-05-09 16:54:31 UTC,2021-05-09 17:16:21 UTC
+319,custom_field5,Jewelry,"Department, ON HAND WAREHOUSE",2021-05-09 16:54:31 UTC,2021-05-09 17:16:05 UTC
+318,custom_field4,Jewelry,"Location, Purchase Date, location_out",2021-05-09 16:54:31 UTC,2025-10-03 13:03:56 UTC
+317,custom_field3,Jewelry,"Item Country, DateModified, model Type",2021-05-09 16:54:31 UTC,2021-05-10 10:55:05 UTC
+316,custom_field2,Jewelry,"Cost Price, Cost, Total cost, total_item_cost",2021-05-09 16:54:31 UTC,2025-10-03 13:04:14 UTC
+315,custom_field1,Jewelry,"Cost %, Buy Price USD",2021-05-09 16:54:31 UTC,2021-05-09 17:13:46 UTC
+274,price_variant,Jewelry,Price Variant,2021-01-28 07:33:11 UTC,2021-01-28 07:33:11 UTC
+273,max_quantity,Jewelry,"Max Quantity, Quantity",2021-01-28 07:33:11 UTC,2021-12-17 14:40:53 UTC
+229,is_customizable,Jewelry,"Customizable, Customizable Jewelry, Customizable Values",2020-10-01 08:24:12 UTC,2020-10-01 08:24:12 UTC
+225,ring_mm_ic,Jewelry,"Available Ring Size, Ring Size, Length/Size, Available Ring Sizes, Available Size, Available Sizes",2020-04-29 10:17:02 UTC,2023-10-12 06:51:37 UTC
+224,thickness_mm_ic,Jewelry,"Available Thickness MM, Thickness MM",2020-04-29 10:17:02 UTC,2020-04-29 10:17:02 UTC
+223,width_mm_ic,Jewelry,"Available Width MM, Width MM",2020-04-29 10:17:02 UTC,2020-04-29 10:17:02 UTC
+222,metal_color_ic,Jewelry,Available Metal Color,2020-04-29 10:17:01 UTC,2020-04-29 10:17:01 UTC
+221,metal_type_ic,Jewelry,"Available Metal Type, Available Metal Types, Available Metals",2020-04-29 10:17:01 UTC,2024-10-21 09:24:55 UTC
+220,short_title,Jewelry,"Short Title, Short Description, Notes line 1_side, TB205",2020-04-07 06:10:10 UTC,2023-05-08 18:48:34 UTC
+219,custom_sort_order,Jewelry,Rank,2020-04-07 06:10:10 UTC,2020-04-07 06:10:10 UTC
+150,cert_url_1,Jewelry,"Certificate Filename, CertFile, CertFilename, CertificateFile, Certificate Link, CertificateImage, CertImage, File, CERTIMG",2019-07-31 10:24:02 UTC,2019-07-31 10:24:02 UTC
+149,country,Jewelry,"Country, Country Location, LotCountry",2019-06-28 12:32:40 UTC,2019-06-28 12:32:40 UTC
+148,side_stone_fancy_color_intensity,Jewelry,"Side FancyColor Intensity, FancyColorIntensity_side",2019-06-28 12:32:40 UTC,2023-02-15 14:02:29 UTC
+147,side_stone_fancy_color_dominant_color,Jewelry,"Side Fancy Color, FancyColor_side",2019-06-28 12:32:40 UTC,2023-02-15 14:02:49 UTC
+146,side_stone_clarity,Jewelry,"Side Clarity, Clarity_side, sideclarityquality",2019-06-28 12:32:40 UTC,2023-05-16 07:35:34 UTC
+145,side_stone_color,Jewelry,"Side Color, Color_side, sidestonecilor, sidestonecolor",2019-06-28 12:32:40 UTC,2023-05-16 07:35:10 UTC
+144,side_stone_shape,Jewelry,"Side Shape, side_stone_shape, Shape_side, sidestoneshape, Side Dia Shape",2019-06-28 12:32:40 UTC,2026-01-15 09:32:09 UTC
+143,side_stone_size,Jewelry,"Side Carat Weight, Carats_side, ComponentsTotalWeightDiamondSide, sidestonewt, CTTW, Side Dia Wt",2019-06-28 12:32:40 UTC,2026-01-15 09:32:58 UTC
+142,side_stone_total_stones,Jewelry,"Side Total Stones, side_stone_total_stones, ComponentsTotalQtyDiamondSide, Side Dia Qty",2019-06-28 12:32:40 UTC,2026-01-15 09:32:38 UTC
+141,side_stone_gem_type,Jewelry,"Side GemType, side_stone_gem_type",2019-06-28 12:32:40 UTC,2020-06-12 13:27:10 UTC
+140,side_stone_type,Jewelry,"Side Stone Type, side_stone_type, sidestone",2019-06-28 12:32:39 UTC,2023-05-16 07:33:30 UTC
+139,metal_carat,Jewelry,"item_material_karat, Item Carat, Metal Carat",2019-06-28 12:32:39 UTC,2025-10-14 12:21:19 UTC
+138,image_url_6,Jewelry,"Image Link 6, Diamond Image 6, Image Url 6, IMAGE_LINK_6, IMAGE_URL_6, Image 6, imagefile_6, DIAMONDIMG 6, Picture URL 6, Stone Image 6, Image File 6, ThumbnailImage 6",2019-06-28 12:32:39 UTC,2023-01-30 06:42:29 UTC
+137,image_url_5,Jewelry,"Image Link 5, Diamond Image 5, Image Url 5, IMAGE_LINK_5, IMAGE_URL_5, Image 5, imagefile_5, DIAMONDIMG 5, Picture URL 5, Stone Image 5, Image File 5, ThumbnailImage 5",2019-06-28 12:32:39 UTC,2023-01-30 06:42:18 UTC
+136,image_url_4,Jewelry,"Image Link 4, Diamond Image 4, Image Url 4, IMAGE_LINK_4, IMAGE_URL_4, Image 4, imagefile_4, DIAMONDIMG 4, Picture URL 4, Stone Image 4, Image File 4, ThumbnailImage 4",2019-06-28 12:32:39 UTC,2023-01-30 06:41:54 UTC
+135,image_url_3,Jewelry,"Image Link 3, Diamond Image 3, Image Url 3, IMAGE_LINK_3, IMAGE_URL_3, Image 3, imagefile_3, DIAMONDIMG 3, Picture URL 3, Stone Image 3, Image File 3, ThumbnailImage 3",2019-06-28 12:32:39 UTC,2023-01-30 06:41:43 UTC
+134,image_url_2,Jewelry,"Image Link 2, Diamond Image 2, Image Url 2, IMAGE_LINK_2, IMAGE_URL_2, Image 2, imagefile_2, DIAMONDIMG 2, Picture URL 2, Stone Image 2, Image File 2, ThumbnailImage 2",2019-06-28 12:32:39 UTC,2023-01-30 06:41:22 UTC
+133,image_url_1,Jewelry,"Image Link 1, Diamond Image 1, Image Url 1, IMAGE_LINK_1, IMAGE_URL_1, Image 1, imagefile_1, DIAMONDIMG 1, Picture URL 1, Image URL, Image Link, Stone Image, Image, Image File, Picture URL, ThumbnailImage, image_url",2019-06-28 12:32:39 UTC,2023-05-16 07:28:25 UTC
+126,jewelry_description,Jewelry,"Description, LONG DESCRIPTION, Item Description, Product Description, Remark, Style Description",2018-12-22 15:18:32 UTC,2023-10-12 06:50:19 UTC
+125,availability,Jewelry,"Availability, Available, Status, Avail, On Hand",2017-06-30 16:04:55 UTC,2017-06-30 16:04:55 UTC
+124,state,Jewelry,"State1, State1 Location",2017-06-30 16:04:55 UTC,2017-06-30 16:04:55 UTC
+123,city,Jewelry,"City, City Location, Custom Subtype of Jewellery",2017-06-30 16:04:55 UTC,2021-06-18 09:59:05 UTC
+122,center_pair,Jewelry,"Center Pair, Center Match Pair",2017-06-30 16:04:55 UTC,2017-06-30 16:04:55 UTC
+121,center_table_percent,Jewelry,"Center Table, Center Table Percent, center_table_percent, Table %_Center, Halo Thickness MM",2017-06-30 16:04:55 UTC,2024-12-04 04:24:02 UTC
+120,center_depth_percent,Jewelry,"Center Depth, Center Depth Percent. center_depth_percent, Depth %_Center, Shank Thickness MM",2017-06-30 16:04:55 UTC,2024-12-04 04:23:40 UTC
+119,center_cut,Jewelry,"Center Cut, Center Stone Cut Grade, stone_cut, center_cut, Cut Grade_Center, Setting Style SKU, MainStoneCut",2017-06-30 16:04:55 UTC,2026-06-08 15:01:12 UTC
+118,center_symmetry,Jewelry,"Center Symmetry, Center Stone Symmetry, center_symmetry, symmetry_Center",2017-06-30 16:04:55 UTC,2023-02-15 13:50:48 UTC
+117,center_polish,Jewelry,"Center Polish, Center Stone Polish, center_polish, Polish_Center, Stone Size Gemstone",2017-06-30 16:04:55 UTC,2024-01-16 14:24:28 UTC
+116,center_meas_depth,Jewelry,"Center Measurements Depth, Center Meas Depth, stone_depth, center_meas_depth",2017-06-30 16:04:54 UTC,2020-03-24 05:38:55 UTC
+115,center_meas_width,Jewelry,"Center Measurements Width, Center Meas Width, stone_width, center_meas_width",2017-06-30 16:04:54 UTC,2020-03-24 05:39:20 UTC
+114,center_meas_length,Jewelry,"Center Measurements Length, Center Meas Length, stone_height, center_meas_length",2017-06-30 16:04:54 UTC,2020-03-24 05:39:07 UTC
+113,center_measurement,Jewelry,"Center Measurements, CENTER STONE MEASUREMENTS, Measurements_Center",2017-06-30 16:04:54 UTC,2023-02-15 13:45:01 UTC
+112,center_size,Jewelry,"Center Carat Weight, CENTER STONE WEIGHT, Center Stone carat, stone_carat/size, center_carat_weight, Carats_Center, Center Wt, ComponentsTotalWeightDiamondCenter, mainstonewt, Finger Size, Stone Size, Average TW, Center Dia Wt, mainstoneweight",2017-06-30 16:04:54 UTC,2026-07-01 12:19:40 UTC
+111,center_total_stones,Jewelry,"Center Total Stones, # OF CENTER STONES, center_total_stones, ComponentsTotalQtyDiamondCenter, Center Dia QTY",2017-06-30 16:04:54 UTC,2026-01-15 09:30:46 UTC
+110,center_treatment,Jewelry,"Center Enhancement, Center Treatment, center_treatment, Eternity, Grams",2017-06-30 16:04:54 UTC,2025-10-09 09:31:42 UTC
+109,center_cert_num,Jewelry,"Center Cert Num,  certificate#, stone_certificate, center_cert_num, Cert#_Center",2017-06-30 16:04:54 UTC,2024-04-10 05:53:35 UTC
+108,center_lab,Jewelry,"Center Lab, Center Stone Certificate, stone_lab, center_lab, Lab_Center",2017-06-30 16:04:54 UTC,2023-10-18 14:48:51 UTC
+107,center_fluor_intensity,Jewelry,"Center Fluorescence, Center Stone Fluorescence, center_fluorescence, Fluorescence_Center",2017-06-30 16:04:54 UTC,2023-02-15 13:51:18 UTC
+106,center_fancy_color_intensity,Jewelry,"Center Intensity, center_intensity, FancyColorIntensity_Center, center Fancy Intensity",2017-06-30 16:04:54 UTC,2026-01-29 11:46:41 UTC
+105,center_fancy_color_dominant_color,Jewelry,"Center Fancy Color, center_fancy_color, FancyColor_Center",2017-06-30 16:04:54 UTC,2023-02-15 13:57:06 UTC
+104,center_clarity,Jewelry,"Center Clarity, Center Stone Diamond Clarity, center_clarity, Clarity_Center, ClarityID, mainclarityquality, Diamond Quality, Clarity, Finish, MainStoneClarity",2017-06-30 16:04:54 UTC,2026-06-08 15:00:49 UTC
+103,center_color,Jewelry,"Center Color, CENTER STONE COLOR, Center Stone Diamond Color, stone_color, center_color, Color_Center, ColorID, mainstonecolor, Color, Range",2017-06-30 16:04:54 UTC,2024-04-10 05:54:20 UTC
+102,center_shape,Jewelry,"Center Shape, CENTER STONE SHAPE, stone_shape, Mainstoneshape, center_shape, Shape_Center, ShapeID, Shape SKU",2017-06-30 16:04:54 UTC,2023-12-18 12:33:05 UTC
+101,center_gem_type,Jewelry,"CenterGemType, CENTER STONE TYPE, center_gem_type",2017-06-30 16:04:54 UTC,2020-03-24 05:35:33 UTC
+100,center_type,Jewelry,"Center Type, stone_type, center_type, mainstone, Gemstone Type, Stone Color, Stone Type",2017-06-30 16:04:54 UTC,2025-03-31 11:30:25 UTC
+99,brand,Jewelry,"Brand, item_brand, Style Name, Collection, EAN, Program Name",2017-06-30 16:04:54 UTC,2025-11-18 13:48:12 UTC
+98,total_stones,Jewelry,"Total Number of Stones, TotalNumberStones, Total_number_of_stones, ComponentsTotalQtyDiamond, diaQty, Stone Count, Number of stones, Qty",2017-06-30 16:04:54 UTC,2023-10-18 14:12:54 UTC
+97,mount,Jewelry,Mount,2017-06-30 16:04:54 UTC,2025-10-09 10:18:42 UTC
+96,metals,Jewelry,"Metal, item_material, Metal Type, MetalID, Metal Colour",2017-06-30 16:04:54 UTC,2023-08-09 10:18:03 UTC
+95,comments,Jewelry,"Comments, Comment, Title, Remarks, General Information",2017-06-30 16:04:54 UTC,2020-06-12 13:20:31 UTC
+94,video_url_1,Jewelry,"Video URL, Video Link, Video, 3D File, video_url, vid, Video 1",2017-06-30 16:04:54 UTC,2023-12-19 08:59:08 UTC
+92,size,Jewelry,"Weight, Carat, CaratSize, Carat Weight, Ct, CtSize, CtWeight, Sz, Size, Total Carat Weight, TotalCaretWeight, Total_carat_weight, CTW, ComponentsTotalWeightDiamond, diamond_size, diawt, Diamond Carat, Carat Weight Per Stone, Ctw Group, CT WT /PC, Carat Total Weight",2017-06-30 16:04:54 UTC,2025-11-05 07:31:42 UTC
+91,jewelry_style,Jewelry,"Jewelry Style, Category, Type, Jewelry Type, Product Type, item_type, jewelry_style, Jewelry_type, Style, CategoryID, Style SKU, Jewelry Category",2017-06-30 16:04:54 UTC,2024-05-21 09:12:54 UTC
+90,total_sales_price,Jewelry,"Total Price, Price, AskingPrice, Prc,  Price with Vat, Total_price, totalsalesprice, Retail, TotalSale, OurPrice, WholesalePrice, MSRP, Retail Price",2017-06-30 16:04:54 UTC,2023-11-13 16:12:18 UTC
+89,stock_num,Jewelry,"Vendor Stock Number, ReferenceNum, ReferenceNumber, Stock, Stock Num, Stock Number, Stock_No, StockNo, stock_id, VenderStockNumber, Stock Name, Stock #, ITEM#, VendorStyle, productcode, stock_number/SKU, stock_num, productname, SKU, Style/Ctw, name, LotNo_metal, Serial No, Style #, Style No, LotName",2017-06-30 16:04:54 UTC,2025-04-01 09:29:10 UTC

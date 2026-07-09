@@ -1,0 +1,6 @@
+The duplicate dataframe issue is fixed inside agents/config_builder.py.
+
+No manual app.py patch is required.
+
+The normalized dataframe is now cleaned before:
+st.dataframe(normalized.head(20))

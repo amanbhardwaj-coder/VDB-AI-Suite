@@ -1,0 +1,73 @@
+﻿Id,Setter name,Data type,Header variations,Created at,Updated at
+1109,gdrive_image_names,Gemstone,Gdrive Image Names,2026-04-30 16:45:44 UTC,2026-04-30 16:45:44 UTC
+1108,memo_percent_adjustment,Gemstone,Memo Percent Adjustment,2026-04-30 16:45:44 UTC,2026-04-30 16:45:44 UTC
+1107,memo_adjustment_type,Gemstone,Memo Adjustment Type,2026-04-30 16:45:44 UTC,2026-04-30 16:45:44 UTC
+1106,bar_code,Gemstone,bar_code,2026-04-30 16:45:44 UTC,2026-04-30 16:45:44 UTC
+594,share_access,Gemstone,Share Access,2025-01-13 10:51:17 UTC,2020-10-13 10:51:17 UTC
+582,quantity,Gemstone,quantity,2024-12-31 07:18:48 UTC,2024-12-31 07:18:48 UTC
+577,company_identifier,Gemstone,CustomerID,2024-10-16 13:17:08 UTC,2024-10-16 13:17:08 UTC
+520,custom_field13,Gemstone,"test11,test12",2023-03-21 08:23:58 UTC,2023-03-21 08:23:58 UTC
+519,custom_field12,Gemstone,"test9,test10",2023-03-21 08:23:58 UTC,2023-03-21 08:23:58 UTC
+518,custom_field11,Gemstone,List Price,2023-03-21 08:23:58 UTC,2023-03-21 08:23:58 UTC
+517,custom_field10,Gemstone,T DDM TARGET,2023-03-21 08:23:58 UTC,2023-03-21 08:23:58 UTC
+516,custom_field9,Gemstone,DDM TARGET,2023-03-21 08:23:58 UTC,2023-03-21 08:23:58 UTC
+515,custom_field8,Gemstone,% DDM TARGET,2023-03-21 08:23:58 UTC,2023-03-21 08:23:58 UTC
+479,cert_url_4,Gemstone,"Certificate URL 4, Cert Link 4, Certificate Link 4, Certificate Filename 4, Cert File 4, CertFilename 4, CertificateFile 4, CertificateImage 4, CertImage 4, File 4, Cert Url 4",2022-10-29 12:37:47 UTC,2023-01-30 07:20:15 UTC
+478,cert_url_3,Gemstone,"Certificate URL 3, Cert Link 3, Certificate Link 3, Certificate Filename 3, Cert File 3, CertFilename 3, CertificateFile 3, CertificateImage 3, CertImage 3, File 3, Cert Url 3",2022-10-29 12:37:47 UTC,2023-01-30 07:20:02 UTC
+477,cert_url_2,Gemstone,"Certificate URL 2, Cert Link 2, Certificate Link 2, Certificate Filename 2, Cert File 2, CertFilename 2, CertificateFile 2, CertificateImage 2, CertImage 2, File 2, Cert Url 2",2022-10-29 12:37:47 UTC,2023-01-30 07:19:47 UTC
+476,video_url_4,Gemstone,"Video URL 4, Video Link 4, Video 4, 3D File 4, VideoPath 4",2022-10-29 12:37:47 UTC,2023-01-30 07:15:44 UTC
+475,video_url_3,Gemstone,"Video URL 3, Video Link 3, Video 3, 3D File 3, VideoPath 3",2022-10-29 12:37:47 UTC,2023-01-30 07:15:01 UTC
+474,video_url_2,Gemstone,"Video URL 2, Video Link 2, Video 2, 3D File 2, VideoPath 2",2022-10-29 12:37:47 UTC,2023-01-30 07:14:53 UTC
+473,image_url_8,Gemstone,"Image URL 8, Image Link 8, Image 8, StoneImage 8, Image File 8, Picture URL 8, photo 8",2022-10-29 12:37:47 UTC,2023-01-30 06:34:30 UTC
+472,image_url_7,Gemstone,"Image URL 7, Image Link 7, Image 7, StoneImage 7, Image File 7, Picture URL 7, photo 7",2022-10-29 12:37:47 UTC,2023-01-30 06:34:25 UTC
+471,image_url_6,Gemstone,"Image URL 6, Image Link 6, Image 6, StoneImage 6, Image File 6, Picture URL 6, photo 6",2022-10-29 12:37:47 UTC,2023-01-30 06:34:20 UTC
+470,image_url_5,Gemstone,"Image URL 5, Image Link 5, Image 5, StoneImage 5, Image File 5, Picture URL 5, photo 5",2022-10-29 12:37:47 UTC,2023-01-30 06:34:13 UTC
+469,image_url_4,Gemstone,"Image URL 4, Image Link 4, Image 4, StoneImage 4, Image File 4, Picture URL 4, photo 4",2022-10-29 12:37:47 UTC,2023-01-30 06:34:07 UTC
+468,image_url_3,Gemstone,"Image URL 3, Image Link 3, Image 3, StoneImage 3, Image File 3, Picture URL 3, photo 3",2022-10-29 12:37:47 UTC,2023-01-30 06:33:55 UTC
+467,image_url_2,Gemstone,"Image URL 2, Image Link 2, Image 2, StoneImage 2, Image File 2, Picture URL 2, photo 2, additional_image
+",2022-10-29 12:37:47 UTC,2023-10-18 05:49:30 UTC
+368,tags,Gemstone,Tags,2022-09-20 08:08:02 UTC,2022-09-20 08:08:02 UTC
+367,new_arrival_date,Gemstone,"New Arrival Date, Arrival Date",2022-09-20 08:08:02 UTC,2022-09-20 08:08:02 UTC
+366,item_tag,Gemstone,Featured,2022-09-20 08:08:02 UTC,2022-09-20 08:08:02 UTC
+365,max_quantity,Gemstone,Max Quantity,2022-09-20 08:08:02 UTC,2022-09-20 08:08:02 UTC
+364,pair_stock_num,Gemstone,"Pair, Match Pair",2022-09-20 08:08:02 UTC,2022-09-20 08:08:02 UTC
+341,clarity,Gemstone,"Quality Grade, Quality, ClarityID",2022-02-24 10:59:07 UTC,2024-11-20 12:22:26 UTC
+340,sub_type,Gemstone,Sub Type,2022-02-15 09:19:53 UTC,2022-02-15 09:19:53 UTC
+323,short_title,Gemstone,"Short Title, Short Description",2021-05-27 14:51:30 UTC,2021-05-27 14:51:30 UTC
+314,custom_field7,Gemstone,Previewable,2021-05-09 16:54:30 UTC,2021-05-09 16:54:30 UTC
+313,custom_field6,Gemstone,Notes,2021-05-09 16:54:30 UTC,2021-05-09 16:54:30 UTC
+312,custom_field5,Gemstone,Department,2021-05-09 16:54:30 UTC,2021-05-09 16:54:30 UTC
+311,custom_field4,Gemstone,Location,2021-05-09 16:54:30 UTC,2021-05-09 16:54:30 UTC
+310,custom_field3,Gemstone,Item Country,2021-05-09 16:54:30 UTC,2021-05-09 16:54:30 UTC
+309,custom_field2,Gemstone,Cost Price,2021-05-09 16:54:30 UTC,2021-05-09 16:54:30 UTC
+308,custom_field1,Gemstone,Cost %,2021-05-09 16:54:30 UTC,2021-05-09 16:54:30 UTC
+88,pair,Gemstone,Pairs,2017-06-30 16:04:54 UTC,2022-09-20 08:07:59 UTC
+87,comments,Gemstone,"Comments, Comment, Description",2017-06-30 16:04:54 UTC,2017-06-30 16:04:54 UTC
+86,treatment_notes,Gemstone,"Treatment Notes, Fancy Color Overtones, FCOvertone, naturalfancyovertone, EnhancementNotes",2017-06-30 16:04:54 UTC,2018-03-16 15:44:49 UTC
+85,country_of_origin,Gemstone,"Origin Country, Origin, Country Origin, Country Of Origin, GemOriginID",2017-06-30 16:04:54 UTC,2025-06-04 16:52:13 UTC
+84,treatment,Gemstone,"Treatment, Enhance, Enhancement, Enhancements, Enhance-ments, Treatments",2017-06-30 16:04:54 UTC,2017-06-30 16:04:54 UTC
+83,video_url_1,Gemstone,"Video URL, Video Link, Video, 3D File, VideoPath, video_url
+",2017-06-30 16:04:54 UTC,2023-10-11 08:21:33 UTC
+82,image_url_1,Gemstone,"Image URL, Image Link, StoneImage, Image File, Picture URL, photo, Image 1, image_url, Image
+",2017-06-30 16:04:54 UTC,2025-05-29 20:22:15 UTC
+81,cert_url_1,Gemstone,"Certificate URL, Cert Link, Certificate Link, Certificate Filename, Cert File, CertFilename, CertificateFile, CertificateImage, CertImage, File, Cert Url, cert_url",2017-06-30 16:04:54 UTC,2023-12-04 07:21:31 UTC
+80,cert_num,Gemstone,"Certificate Number, Cert Num, CertID, CertificateID, CertificateNum, CertNo, CmPub, Cert Number, ReportNumber, ReportNum, ReportNo, Certification number, CertificateNo, Certificates/0/CertificateID",2017-06-30 16:04:54 UTC,2025-03-25 08:02:38 UTC
+79,country,Gemstone,"Country, Country Location, LotCountry ",2017-06-30 16:04:54 UTC,2025-06-04 16:51:59 UTC
+78,state,Gemstone,"State1, State1 Location",2017-06-30 16:04:54 UTC,2017-06-30 16:04:54 UTC
+77,city,Gemstone,"City, City Location",2017-06-30 16:04:54 UTC,2017-06-30 16:04:54 UTC
+76,availability,Gemstone,"Availability, Available, Status, LotStatusID",2017-06-30 16:04:54 UTC,2024-11-21 07:16:52 UTC
+75,meas_depth,Gemstone,"Measurements Depth, Meas depth, Measurements3",2017-06-30 16:04:54 UTC,2024-11-21 07:26:10 UTC
+74,meas_width,Gemstone,"Measurements Width, Meas width, Measurements2",2017-06-30 16:04:54 UTC,2024-11-21 07:25:49 UTC
+73,meas_length,Gemstone,"Measurements Length, Meas length, Measurements1 ",2017-06-30 16:04:54 UTC,2025-03-25 07:58:15 UTC
+72,measurement,Gemstone,"Measurements, Dimensions, Meas, Measurement, Measurement1, LxWxH, L*W*H, L-W-H, LxW, L*W, L-W, Dimension
+",2017-06-30 16:04:54 UTC,2025-03-25 07:56:53 UTC
+71,price_per_carat,Gemstone,"Price, PerCarat, PerCt, Price Per Carat, PricePerCt, Px, Price/PC, PR/CT, Price/Carat, Price/Ct, Price Crt, Sale",2017-06-30 16:04:54 UTC,2024-12-03 11:22:32 UTC
+70,total_sales_price,Gemstone,"Total Price, AskingPrice, Prc, Total Sales Price, Facet Total Price, Total, TotalSale",2017-06-30 16:04:54 UTC,2024-12-03 11:22:15 UTC
+69,lab,Gemstone,"Lab, Cert, Certificate, Laboratory, LabAccountName",2017-06-30 16:04:54 UTC,2024-11-20 13:02:47 UTC
+68,size,Gemstone,"Weight, Carat, CaratSize, Carat Weight, Ct, CtSize, CtWeight, Sz, Size, Carats, Cabochon Wheight, Facet Wheight, weight(Cts.), weight per cts, Weight (Ct)
+
+",2017-06-30 16:04:53 UTC,2023-01-04 10:50:42 UTC
+67,shape,Gemstone,"Shape, Shp, ShapeID",2017-06-30 16:04:53 UTC,2024-11-20 12:20:56 UTC
+66,color,Gemstone,"Color, Colr, Colour, Gem Color, Primary Color,Hue, ColorID",2017-06-30 16:04:53 UTC,2024-11-20 12:21:47 UTC
+65,gem_type,Gemstone,"Type, Stone Type, Gem Type, Gemstone, GemTypeID",2017-06-30 16:04:53 UTC,2024-11-29 07:22:55 UTC
+64,stock_num,Gemstone,"Vendor Stock Number, ReferenceNum, ReferenceNumber, Stock, Stock Num, Stock Number, Stock_No, StockNo, VenderStockNumber, Stock Name, Stock #, SerialNumber, Stock ID, Stock_ID, parcel num, Stone ref#, Stone reference, LotID",2017-06-30 16:04:53 UTC,2025-04-15 09:49:37 UTC
