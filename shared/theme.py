@@ -32,11 +32,14 @@ def apply_theme() -> None:
 
 [data-testid="stSidebar"] {
     background: linear-gradient(180deg, #0b1020 0%, #11172b 100%);
+    /* Remove any default top padding the sidebar may have */
+    padding-top: 0 !important;
 }
 
-/* Remove the large default padding above the sidebar */
+/* Remove the large default padding above the sidebar container */
 [data-testid="stSidebar"] > div:first-child {
-    padding-top: 0.35rem !important;
+    padding-top: 0 !important;
+    margin-top: 0 !important;
 }
 
 /* Remove any extra margin from the first sidebar element */
@@ -45,10 +48,11 @@ def apply_theme() -> None:
     padding-top: 0 !important;
 }
 
-/* Remove image margin */
+/* Nudge the logo up slightly to remove extra space above it */
 [data-testid="stSidebar"] img {
-    margin-top: 0 !important;
+    margin-top: -0.45rem !important;
     display: block;
+    /* ensure block layout so negative margin behaves predictably */
 }
 
 [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
