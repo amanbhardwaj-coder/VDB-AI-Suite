@@ -6,11 +6,11 @@ from io import BytesIO
 
 import pandas as pd
 import streamlit as st
-
+from shared.constants import VDB_LOGO_URL
 
 st.set_page_config(
     page_title="Excel / CSV File Splitter",
-    page_icon="📄",
+    page_icon=VDB_LOGO_URL,
     layout="centered",
 )
 

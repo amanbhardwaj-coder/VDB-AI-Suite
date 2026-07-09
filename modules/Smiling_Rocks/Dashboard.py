@@ -18,14 +18,15 @@ from typing import Callable, Optional
 
 import pandas as pd
 import streamlit as st
+from shared.constants import VDB_LOGO_URL
 
 
 # -----------------------------------------------------------------------------
 # Page setup
 # -----------------------------------------------------------------------------
 st.set_page_config(
-    page_title="VDB AI Suite",
-    page_icon="💎",
+    page_title="VDB Tools",
+    page_icon=VDB_LOGO_URL,
     layout="wide",
     initial_sidebar_state="expanded",
 )

@@ -1,8 +1,9 @@
 import streamlit as st
+from shared.constants import VDB_LOGO_URL
 import pandas as pd
 import json
 
-st.set_page_config(page_title="JSON to CSV Converter", layout="wide")
+st.set_page_config(page_title="JSON to CSV Converter", page_icon=VDB_LOGO_URL, layout="wide")
 
 st.title("📄 Postman JSON → CSV Converter")
 

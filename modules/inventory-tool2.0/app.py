@@ -36,6 +36,7 @@ import pandas as pd
 
 try:
     import streamlit as st
+    from shared.constants import VDB_LOGO_URL
     _HAS_STREAMLIT = True
 except Exception:
     _HAS_STREAMLIT = False
@@ -1509,7 +1510,7 @@ def run_streamlit_app():
     if not _HAS_STREAMLIT:
         raise RuntimeError("Streamlit is not installed. Run: pip install streamlit")
 
-    st.set_page_config(page_title="Inventory Expander", layout="wide")
+    st.set_page_config(page_title="Inventory Expander", page_icon=VDB_LOGO_URL, layout="wide")
     st.title("Jewelry Builder")
 
     if "rules" not in st.session_state:

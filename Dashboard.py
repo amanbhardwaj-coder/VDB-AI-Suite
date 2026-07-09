@@ -7,8 +7,7 @@ from shared.registry import TOOLS, get_tool, module_exists
 from shared.theme import apply_theme
 
 
-VDB_LOGO_URL = "https://app.vdbapp.com/vdb_logo_icon.ico"
-
+from shared.constants import VDB_LOGO_URL
 
 st.set_page_config(
     page_title="VDB tools",

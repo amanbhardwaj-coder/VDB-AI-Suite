@@ -17,6 +17,7 @@ from xml.etree import ElementTree as ET
 
 try:
     import streamlit as st
+    from shared.constants import VDB_LOGO_URL
 except ModuleNotFoundError:
     st = None
 
@@ -915,7 +916,7 @@ def main():
     if st is None:
         raise RuntimeError("Streamlit is required to run the UI. Install streamlit and run `streamlit run app.py`.")
 
-    st.set_page_config(page_title="Perfect Love Shopify Converter", layout="wide")
+    st.set_page_config(page_title="Perfect Love Shopify Converter", page_icon=VDB_LOGO_URL, layout="wide")
     st.title("Perfect Love Shopify Converter")
     st.caption("Upload the source inventory workbook or CSV, review the merged product preview, then download a clean Shopify CSV.")
 
