@@ -21,8 +21,8 @@ apply_theme()
 
 
 PAGE_OPTIONS = [
-    "🚀 Run Tool",
     "🏠 Home",
+    "🧰 Tools",
     "📚 Repository Center",
     "🧭 Roadmap",
     "⚙️ Settings",
@@ -30,11 +30,31 @@ PAGE_OPTIONS = [
 
 
 if "page" not in st.session_state:
-    st.session_state["page"] = "🚀 Run Tool"
+    st.session_state["page"] = "🏠 Home"
 if "active_tool" not in st.session_state:
     st.session_state["active_tool"] = "smiling_rocks"
 if "favorites_only" not in st.session_state:
     st.session_state["favorites_only"] = False
+if "tool_category" not in st.session_state:
+    default_tool = get_tool(st.session_state["active_tool"])
+    st.session_state["tool_category"] = default_tool.category if default_tool else "All"
+
+
+def activate_tool(tool_key: str) -> None:
+    tool = get_tool(tool_key)
+    if not tool:
+        return
+    st.session_state["page"] = "🧰 Tools"
+    st.session_state["active_tool"] = tool.key
+    st.session_state["tool_category"] = tool.category
+
+
+def tool_option_label(tool_key: str) -> str:
+    tool = get_tool(tool_key)
+    if not tool:
+        return tool_key
+    status = "ready" if module_exists(tool) else "missing"
+    return f"{tool.icon} {tool.name} ({status})"
 
 
 def sidebar() -> None:
@@ -52,71 +72,56 @@ def sidebar() -> None:
         st.session_state["page"] = selected
 
         st.markdown("---")
-        st.caption("Select tool")
-        tool_keys = [tool.key for tool in TOOLS]
-        selected_tool = st.selectbox(
-            "Tool",
-            tool_keys,
-            index=tool_keys.index(st.session_state.get("active_tool", "smiling_rocks")) if st.session_state.get("active_tool") in tool_keys else 0,
-            format_func=lambda key: get_tool(key).name if get_tool(key) else key,
-            label_visibility="collapsed",
-        )
-        if selected_tool != st.session_state.get("active_tool"):
-            st.session_state["active_tool"] = selected_tool
-            st.session_state["page"] = "🚀 Run Tool"
-            st.rerun()
-
-        selected_tool_obj = get_tool(st.session_state["active_tool"])
-        if selected_tool_obj:
-            if module_exists(selected_tool_obj):
-                st.success("Module found")
-            else:
-                st.error("Module missing")
-            st.caption(f"Path: `{selected_tool_obj.module_path}`")
-
-        st.markdown("---")
         st.caption("Quick launch")
         quick_cols = st.columns(2)
         with quick_cols[0]:
             if st.button("💎 SR", use_container_width=True):
-                st.session_state["page"] = "🚀 Run Tool"
-                st.session_state["active_tool"] = "smiling_rocks"
+                activate_tool("smiling_rocks")
                 st.rerun()
         with quick_cols[1]:
             if st.button("📄 Merge", use_container_width=True):
-                st.session_state["page"] = "🚀 Run Tool"
-                st.session_state["active_tool"] = "file_merge"
+                activate_tool("file_merge")
                 st.rerun()
+
+        if st.session_state["page"] == "🧰 Tools":
+            st.markdown("---")
+            st.caption("Tool selector")
+
+            category_options = ["All"] + categories()
+            if st.session_state.get("tool_category") not in category_options:
+                st.session_state["tool_category"] = "All"
+
+            selected_category = st.selectbox("Category", category_options, key="tool_category")
+            visible_tools = [
+                tool
+                for tool in TOOLS
+                if selected_category == "All" or tool.category == selected_category
+            ]
+
+            if not visible_tools:
+                st.info("No tools found in this category.")
+            else:
+                visible_keys = [tool.key for tool in visible_tools]
+                if st.session_state.get("active_tool") not in visible_keys:
+                    st.session_state["active_tool"] = visible_keys[0]
+
+                selected_tool = st.selectbox(
+                    "Tool",
+                    visible_keys,
+                    index=visible_keys.index(st.session_state["active_tool"]),
+                    format_func=tool_option_label,
+                )
+                st.session_state["active_tool"] = selected_tool
+
+                active_tool = get_tool(selected_tool)
+                if active_tool:
+                    st.caption(active_tool.description)
 
         st.markdown("---")
         local_count = sum(1 for tool in TOOLS if module_exists(tool))
         st.metric("Registered tools", len(TOOLS))
         st.metric("Local modules", local_count)
         st.caption(f"Last opened: {datetime.now().strftime('%d %b %Y, %I:%M %p')}")
-
-
-def run_tool_page() -> None:
-    tool = get_tool(st.session_state.get("active_tool", "smiling_rocks"))
-    if not tool:
-        st.error("Selected tool not found in registry.")
-        return
-
-    top = st.columns([1.4, 1])
-    with top[0]:
-        st.markdown(f"## {tool.icon} {tool.name}")
-        st.caption(tool.description)
-    with top[1]:
-        st.markdown("#### Tool status")
-        st.write("✅ Local module found" if module_exists(tool) else "❌ Module folder missing")
-
-    if not module_exists(tool):
-        st.error(f"Module folder not found: `{tool.module_path}`")
-        st.info("Make sure the uploaded module folder name matches the path in `shared/registry.py`.")
-        st.link_button("Open repository", tool.repo_url, use_container_width=True)
-        return
-
-    # This is the important part: the selected app runs below and behaves like its old standalone Streamlit app.
-    render_tool_app(tool, height=950)
 
 
 def home_page() -> None:
@@ -146,8 +151,7 @@ def home_page() -> None:
     for col, (label, key) in zip([q1, q2, q3, q4], quick_actions):
         with col:
             if st.button(label, key=f"quick_{key}", use_container_width=True, type="primary" if key == "smiling_rocks" else "secondary"):
-                st.session_state["page"] = "🚀 Run Tool"
-                st.session_state["active_tool"] = key
+                activate_tool(key)
                 st.rerun()
 
     section_title("Favorite tools", "Pinned for faster access")
@@ -159,15 +163,43 @@ def home_page() -> None:
         st.markdown(
             """
 <div class="vdb-timeline">
-  <div class="vdb-step"><b>Sidebar dropdown</b><span>Select any tool from the sidebar and run it directly.</span></div>
+  <div class="vdb-step"><b>Dashboard shell</b><span>Polished UI, navigation, search, repository center, and roadmap are ready.</span></div>
   <div class="vdb-step"><b>Modules uploaded</b><span>The dashboard detects modules under the modules/ folder.</span></div>
-  <div class="vdb-step"><b>Standalone behavior</b><span>Each selected app is started as its own Streamlit app and embedded inside the dashboard.</span></div>
+  <div class="vdb-step"><b>Apps runnable</b><span>Registered module apps can now be launched inside the dashboard iframe.</span></div>
 </div>
             """,
             unsafe_allow_html=True,
         )
     with right:
         command_block("streamlit run Dashboard.py")
+
+
+def tools_page() -> None:
+    tool = get_tool(st.session_state.get("active_tool", "smiling_rocks"))
+
+    if not tool:
+        st.error("Tool not found in registry.")
+        return
+
+    title_col, repo_col = st.columns([4, 1])
+    with title_col:
+        st.subheader(f"{tool.icon} {tool.name}")
+        st.caption(tool.description)
+        st.caption("Use the sidebar dropdown to switch tools. The embedded app below keeps the same workflow as before.")
+    with repo_col:
+        st.link_button("Open repository", tool.repo_url, use_container_width=True)
+
+    info_cols = st.columns(3)
+    info_cols[0].metric("Category", tool.category)
+    info_cols[1].metric("Module", Path(tool.module_path).name)
+    info_cols[2].metric("Status", "Ready" if module_exists(tool) else "Missing")
+
+    if not module_exists(tool):
+        st.error(f"Module folder not found: `{tool.module_path}`")
+        return
+
+    section_title("Live app", "Compact workspace with the tool selector moved into the sidebar")
+    render_tool_app(tool, height=980)
 
 
 def repository_page() -> None:
@@ -198,34 +230,42 @@ def roadmap_page() -> None:
     with c1:
         st.markdown(
             """
-### Current — Standalone app runner
-- Sidebar dropdown selects the tool
-- Selected app starts on its own Streamlit port
-- App is embedded in the dashboard
-- Existing app behavior is preserved
+### Phase 1 — Dashboard shell
+- Polished UI and navigation
+- Tool registry
+- Search and filters
+- Repository center
+- Module detection
+- Iframe app runner
 
-### Next — Native adapters
-- Remove iframe nesting
-- One shared sidebar
-- Shared upload/download manager
+### Phase 2 — Better adapters
+- Smiling Rocks native integration
+- File Merge native integration
+- URL Checker native integration
+- Excel Splitter native integration
             """
         )
     with c2:
         st.markdown(
             """
-### Priority integrations
-- Smiling Rocks Converter
-- File Merge
-- URL Checker
-- Excel Splitter
+### Phase 3 — Inventory/config tools
 - Inventory Tool AI
+- Inventory Tool 2.0
+- JSON to CSV
 - Jewelry Filter Builder
+
+### Phase 4 — Platform features
+- Shared upload manager
+- Download history
+- Job logs
+- Reusable validation utilities
             """
         )
 
     section_title("Current runner", "Apps are started as child Streamlit apps and embedded below the shell")
     st.code(
-        """python -m streamlit run modules/<tool>/app.py --server.port <free_port>""",
+        """# dashboard launches each uploaded module like this
+python -m streamlit run modules/<tool>/app.py --server.port <free_port>""",
         language="bash",
     )
 
@@ -247,6 +287,7 @@ def settings_page() -> None:
         """python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+bash scripts/setup_modules.sh
 streamlit run Dashboard.py"""
     )
 
@@ -254,10 +295,10 @@ streamlit run Dashboard.py"""
 def main() -> None:
     sidebar()
     page = st.session_state["page"]
-    if page == "🚀 Run Tool":
-        run_tool_page()
-    elif page == "🏠 Home":
+    if page == "🏠 Home":
         home_page()
+    elif page == "🧰 Tools":
+        tools_page()
     elif page == "📚 Repository Center":
         repository_page()
     elif page == "🧭 Roadmap":
@@ -265,7 +306,7 @@ def main() -> None:
     elif page == "⚙️ Settings":
         settings_page()
     else:
-        run_tool_page()
+        home_page()
 
 
 if __name__ == "__main__":
