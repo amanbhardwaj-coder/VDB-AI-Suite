@@ -20,7 +20,7 @@ def apply_theme() -> None:
   --vdb-warn: #ffbe55;
 }
 
-.block-container { padding-top: 1.2rem; padding-bottom: 3rem; max-width: 1450px; }
+.block-container { padding-top: 3rem; padding-bottom: 3rem; max-width: 1450px; }
 [data-testid="stSidebar"] { background: linear-gradient(180deg, #0b1020 0%, #11172b 100%); }
 [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p { color: rgba(245,247,251,.8); }
 [data-testid="stMetric"] {
