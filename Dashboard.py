@@ -5,8 +5,6 @@ import streamlit as st
 from shared.page_runner import run_tool_script
 from shared.registry import TOOLS, get_tool, module_exists
 from shared.theme import apply_theme
-
-
 from shared.constants import VDB_LOGO_URL
 
 st.set_page_config(
@@ -42,7 +40,6 @@ def _build_navigation():
         tool_pages[tool.key] = st.Page(
             _tool_page_factory(tool.key),
             title=tool.name,
-            icon=tool.icon,
             url_path=tool.key,
         )
 
@@ -76,7 +73,7 @@ def _sidebar(current_page: st.Page, tool_pages: dict[str, st.Page]) -> None:
     with st.sidebar:
         st.markdown(
             f"""
-<div style="display:flex; flex-direction:column; align-items:flex-start; gap:0.65rem; margin-bottom:0.35rem;">
+<div class="vdb-sidebar-brand" style="display:flex; flex-direction:column; align-items:center; gap:0.65rem; margin-bottom:0.35rem;">
   <img src="{VDB_LOGO_URL}" alt="VDB logo" style="width:5rem; height:5rem;" />
   <div style="font-size:1.55rem; font-weight:700; line-height:1;">VDB tools</div>
 </div>
