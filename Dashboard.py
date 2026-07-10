@@ -118,8 +118,7 @@ def _tool_option_label(tool_key: str) -> str:
     tool = get_tool(tool_key)
     if not tool:
         return tool_key
-    status = "ready" if module_exists(tool) else "missing"
-    return f"{tool.icon} {tool.name} ({status})"
+    return tool.name
 
 
 def main() -> None:
