@@ -59,36 +59,25 @@ COMMON_FILTERS = [
     }
 ]
 
-# ==========================================
-# 2. HELPER FUNCTIONS
-# ==========================================
 def clean_value(value):
-    """Return a stable string for values coming from Excel cells."""
     if pd.isna(value):
         return ""
-    # Excel often returns 105 as 105.0; keep IDs stable/readable.
     if isinstance(value, float) and value.is_integer():
         return str(int(value))
     return str(value).strip()
 
 
 def clean_deps(dep_string):
-    """Parses comma-separated dependencies into a clean list."""
     if pd.isna(dep_string):
         return []
     return [clean_value(d) for d in str(dep_string).split(",") if clean_value(d)]
 
 
 def deps_group_key(dep_string):
-    """Normalize collection dependencies so extra spaces do not create duplicate groups."""
     return "||".join(clean_deps(dep_string))
 
 
 def safe_id(*parts):
-    """
-    Build a stable identity string.
-    Important: frontend display should use `label`; `name` should be unique.
-    """
     chunks = []
     for part in parts:
         text = clean_value(part)
@@ -101,10 +90,6 @@ def safe_id(*parts):
 
 
 def make_filter_name(filter_label, payload_name, parent_key=None, parent_value=None, collection_key=None):
-    """
-    Filter `name` must be unique. Do not use only filter_label, because Level 2
-    can have the same label with different payload/dependency.
-    """
     return safe_id(filter_label, parent_value, collection_key)
 
 
@@ -115,8 +100,6 @@ def create_option(row, icon_type="img"):
 
     return {
         "icon": {"data": "", "type": icon_type},
-        # Keep the display text in label, and make the internal name payload-aware only when needed.
-        # This prevents two same-named options with different payloads from being treated as one.
         "name": option_internal_name,
         "type": "text-list",
         "label": option_name,
@@ -124,39 +107,31 @@ def create_option(row, icon_type="img"):
         "search_payload": [search_payload]
     }
 
-# ==========================================
-# 3. STREAMLIT APP LOGIC
-# ==========================================
 st.set_page_config(page_title="Jewelry JSON Generator", page_icon=VDB_LOGO_URL)
 
-st.title("💎 Jewelry Filter JSON Generator")
+st.title("Jewelry Filter JSON Generator")
 st.markdown("Upload your configured Excel template to instantly generate the frontend JSON configuration.")
 
-# File uploader widget
 uploaded_file = st.file_uploader("Upload your Excel mapping file (.xlsx)", type=["xlsx"])
 
 if uploaded_file is not None:
     try:
-        # Read the Excel file directly from the uploaded file buffer
         collections_df = pd.read_excel(uploaded_file, sheet_name="Collections")
         lvl1_df = pd.read_excel(uploaded_file, sheet_name="Level1_Filters")
         lvl2_df = pd.read_excel(uploaded_file, sheet_name="Level2_Filters")
         
-        # --- A. Build Collections Dropdown ---
-        col_list = collections_df["collection_name"].tolist()
         all_col_options = [{"name": "All-Collections", "label": "All Collections", "collection": "All-Collections", "sectionName": "Jewelry", "predefined_payload": {}}]
-        all_col_options += [{"name": str(c), "label": str(c), "collection": str(c), "sectionName": "Jewelry", "predefined_payload": {}} for c in col_list]
+        all_col_options += [{"name": str(c), "label": str(c), "collection": str(c), "sectionName": "Jewelry", "predefined_payload": {}} for c in collections_df["collection_name"].tolist()]
 
         collections_dropdown = {
             "name": "Collections", "step": 1, "type": "collection-dropdown",
             "label": "Collection / Category", "order": 0, "platforms": ["web"],
             "options": all_col_options, "payload_name": ["collection"],
-            "collection_dependencies": col_list + ["All-Collections"]
+            "collection_dependencies": collections_df["collection_name"].tolist() + ["All-Collections"]
         }
 
         dynamic_blocks = [collections_dropdown]
 
-        # --- B. Build Level 1 Blocks (e.g., Jewelry Types) ---
         if not lvl1_df.empty:
             lvl1_df = lvl1_df.copy()
             lvl1_df["_collection_dependency_key"] = lvl1_df["collection_dependency"].apply(deps_group_key)
@@ -167,7 +142,6 @@ if uploaded_file is not None:
                 sort=False
             )
             for (f_label, p_name, c_deps_key), group in grouped_l1:
-                # Remove exact duplicate option rows, but keep same option labels when payload differs.
                 group = group.drop_duplicates(subset=["option_name", "search_payload"], keep="first")
                 options = [create_option(row, "img") for _, row in group.iterrows()]
                 for idx, opt in enumerate(options, 1): opt["order"] = idx
@@ -188,7 +162,6 @@ if uploaded_file is not None:
                 }
                 dynamic_blocks.append(block)
 
-        # --- C. Build Level 2 Blocks (e.g., Sub-styles dependent on Level 1) ---
         if not lvl2_df.empty:
             lvl2_df = lvl2_df.copy()
             lvl2_df["_collection_dependency_key"] = lvl2_df["collection_dependency"].apply(deps_group_key)
@@ -199,7 +172,6 @@ if uploaded_file is not None:
                 sort=False
             )
             for (f_label, p_name, parent_key, parent_val, c_deps_key), group in grouped_l2:
-                # Remove exact duplicate option rows, but keep same option labels when payload differs.
                 group = group.drop_duplicates(subset=["option_name", "search_payload"], keep="first")
                 options = [create_option(row, "font") for _, row in group.iterrows()]
                 for idx, opt in enumerate(options, 1): opt["order"] = idx
@@ -224,9 +196,6 @@ if uploaded_file is not None:
                 }
                 dynamic_blocks.append(block)
 
-        # ==========================================
-        # 4. COMPILE FINAL JSON & OFFER DOWNLOAD
-        # ==========================================
         final_json = {
             "jewelry": [{
                 "name": "Jewelry",
@@ -240,12 +209,10 @@ if uploaded_file is not None:
             }]
         }
 
-        # Convert dictionary to JSON string
         json_string = json.dumps(final_json, indent=2, ensure_ascii=False)
 
         st.success("✅ JSON successfully generated!")
         
-        # Streamlit Download Button
         st.download_button(
             label="Download Generated JSON",
             data=json_string,
@@ -253,7 +220,6 @@ if uploaded_file is not None:
             mime="application/json"
         )
         
-        # Optional: Show a preview of the JSON in the web app
         with st.expander("Preview JSON"):
             st.json(final_json)
 
