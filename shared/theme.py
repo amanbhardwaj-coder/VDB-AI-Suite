@@ -42,8 +42,6 @@ html, body, [data-testid="stAppViewContainer"], [data-testid="stApp"] {
 [data-testid="stText"],
 label,
 p,
-span,
-div,
 h1,
 h2,
 h3,
@@ -96,6 +94,25 @@ h6 {
 
 [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
     color: var(--vdb-muted);
+}
+
+/* ---------- Inputs ---------- */
+
+[data-baseweb="tag"] {
+  background: #111111 !important;
+  border-radius: 10px !important;
+}
+
+[data-baseweb="tag"] *,
+[data-baseweb="tag"] span,
+[data-baseweb="tag"] div {
+  color: #ffffff !important;
+}
+
+[data-baseweb="select"] > div {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border-color: rgba(17,17,17,.16) !important;
 }
 
 /* ---------- Metrics ---------- */

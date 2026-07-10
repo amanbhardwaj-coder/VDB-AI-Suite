@@ -15,6 +15,7 @@ class Tool:
     repo_url: str
     module_path: str
     status: str
+    enabled: bool = True
     favorite: bool = False
     entry_file: Optional[str] = None
 
@@ -30,6 +31,7 @@ TOOLS: list[Tool] = [
         module_path="modules/Smiling_Rocks",
         entry_file="app.py",
         status="Adapter ready",
+        enabled=True,
         favorite=True,
     ),
     Tool(
@@ -41,6 +43,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/inventory-toolAI",
         module_path="modules/inventory-toolAI",
         status="Module pending",
+        enabled=True,
         favorite=True,
     ),
     Tool(
@@ -52,6 +55,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/inventory-tool2.0",
         module_path="modules/inventory-tool2.0",
         status="Module pending",
+        enabled=True,
     ),
     Tool(
         key="inventory_old",
@@ -62,6 +66,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/inventory-tool",
         module_path="modules/inventory-tool",
         status="Module pending",
+        enabled=True,
     ),
     Tool(
         key="file_merge",
@@ -72,6 +77,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/file_merge",
         module_path="modules/file_merge",
         status="Module pending",
+        enabled=True,
         favorite=True,
     ),
     Tool(
@@ -83,6 +89,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/Excelsplitter",
         module_path="modules/Excelsplitter",
         status="Module pending",
+        enabled=True,
     ),
     Tool(
         key="url_checker",
@@ -93,6 +100,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/URL_Checker",
         module_path="modules/URL_Checker",
         status="Module pending",
+        enabled=True,
         favorite=True,
     ),
     Tool(
@@ -104,6 +112,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/Jsontocsv",
         module_path="modules/Jsontocsv",
         status="Module pending",
+        enabled=True,
     ),
     Tool(
         key="jewelry_filter",
@@ -114,6 +123,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/Jewelry_filter_creation",
         module_path="modules/Jewelry_filter_creation",
         status="Module pending",
+        enabled=True,
         favorite=True,
     ),
     Tool(
@@ -125,16 +135,29 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/JL",
         module_path="modules/JL",
         status="Module pending",
+        enabled=True,
     ),
 ]
 
 
 def categories() -> list[str]:
-    return sorted({tool.category for tool in TOOLS})
+    return sorted({tool.category for tool in enabled_tools()})
 
 
 def get_tool(key: str) -> Tool | None:
     return next((tool for tool in TOOLS if tool.key == key), None)
+
+
+def enabled_tools() -> list[Tool]:
+    return [tool for tool in TOOLS if tool.enabled]
+
+
+def tool_is_available(tool: Tool) -> bool:
+    return tool.enabled and module_exists(tool)
+
+
+def available_tools() -> list[Tool]:
+    return [tool for tool in TOOLS if tool_is_available(tool)]
 
 
 def module_exists(tool: Tool) -> bool:

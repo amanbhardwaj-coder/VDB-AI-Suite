@@ -3,7 +3,7 @@ from __future__ import annotations
 import streamlit as st
 
 from shared.page_runner import run_tool_script
-from shared.registry import TOOLS, get_tool, module_exists
+from shared.registry import available_tools, get_tool
 from shared.theme import apply_theme
 from shared.constants import VDB_LOGO_URL
 
@@ -34,9 +34,7 @@ def _build_navigation():
     home_page = st.Page(_home_page, title="Home", default=True)
 
     tool_pages: dict[str, st.Page] = {}
-    for tool in TOOLS:
-        if not module_exists(tool):
-            continue
+    for tool in available_tools():
         tool_pages[tool.key] = st.Page(
             _tool_page_factory(tool.key),
             title=tool.name,
@@ -84,8 +82,12 @@ def _sidebar(current_page: st.Page, tool_pages: dict[str, st.Page]) -> None:
 
         st.markdown("---")
 
-        visible_tools = TOOLS
+        visible_tools = available_tools()
         visible_keys = [tool.key for tool in visible_tools]
+        if not visible_keys:
+            st.warning("No enabled tools are currently available.")
+            return
+
         active_key = st.session_state.get("active_tool")
         tool_keys_by_path = {page.url_path: key for key, page in tool_pages.items()}
         selected_index = None

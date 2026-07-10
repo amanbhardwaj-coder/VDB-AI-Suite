@@ -10,7 +10,7 @@ from typing import Iterator
 import streamlit as st
 
 from shared.module_runner import find_entry_file
-from shared.registry import get_tool
+from shared.registry import get_tool, tool_is_available
 
 
 @contextmanager
@@ -33,6 +33,12 @@ def run_tool_script(tool_key: str) -> None:
     tool = get_tool(tool_key)
     if not tool:
         st.error("Tool not found in registry.")
+        return
+    if not tool.enabled:
+        st.warning(f"{tool.name} is currently disabled in the registry.")
+        return
+    if not tool_is_available(tool):
+        st.error(f"{tool.name} is enabled but its module folder is not available.")
         return
 
     entry = find_entry_file(tool)
