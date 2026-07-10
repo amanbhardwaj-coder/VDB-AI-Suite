@@ -42,12 +42,13 @@ def tool_card(tool: Tool) -> None:
     status_text = "Local module" if exists else tool.status
     if tool.key == "smiling_rocks":
         status_text = "Adapter ready"
+    icon_html = f'<div class="vdb-icon">{escape(tool.icon)}</div>' if tool.icon else ""
 
     st.markdown(
         f"""
 <div class="vdb-card">
   <div class="vdb-card-top">
-    <div class="vdb-icon">{tool.icon}</div>
+    {icon_html}
     <span class="vdb-status {status_class}">{escape(status_text)}</span>
   </div>
   <h3>{escape(tool.name)}</h3>
@@ -100,7 +101,7 @@ def repo_table(tools: list[Tool]) -> None:
 
 def empty_tool_state(tool: Tool) -> None:
     hero(
-        f"{tool.icon} {tool.name}",
+        tool.name,
         "This tool is registered in the dashboard shell. The next integration step is to wrap its existing Streamlit app with a run() function and mount it here.",
         [tool.category, tool.status],
     )

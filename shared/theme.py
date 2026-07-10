@@ -8,19 +8,29 @@ def apply_theme() -> None:
         """
 <style>
 :root {
-  --vdb-bg: #0b1020;
-  --vdb-panel: rgba(255,255,255,.055);
-  --vdb-panel-2: rgba(255,255,255,.08);
-  --vdb-border: rgba(255,255,255,.14);
-  --vdb-text: #f5f7fb;
-  --vdb-muted: rgba(245,247,251,.68);
-  --vdb-accent: #7c6cff;
-  --vdb-accent-2: #25d0ff;
-  --vdb-good: #35d07f;
-  --vdb-warn: #ffbe55;
+  --vdb-bg: #ffffff;
+  --vdb-panel: #ffffff;
+  --vdb-panel-2: #f7f7f7;
+  --vdb-border: rgba(17,17,17,.12);
+  --vdb-text: #111111;
+  --vdb-muted: rgba(17,17,17,.65);
+  --vdb-accent: #111111;
+  --vdb-accent-2: #4d4d4d;
+  --vdb-good: #0f9d58;
+  --vdb-warn: #c28a00;
 }
 
 /* ---------- Main Page ---------- */
+
+html, body, [data-testid="stAppViewContainer"], [data-testid="stApp"] {
+    background: var(--vdb-bg) !important;
+    color: var(--vdb-text) !important;
+}
+
+.stApp {
+    background: var(--vdb-bg) !important;
+    color: var(--vdb-text) !important;
+}
 
 .block-container {
     padding-top: 2.25rem !important;
@@ -28,31 +38,54 @@ def apply_theme() -> None:
     max-width: 1450px;
 }
 
+[data-testid="stMarkdownContainer"],
+[data-testid="stText"],
+label,
+p,
+span,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--vdb-text);
+}
+
 /* ---------- Sidebar ---------- */
 
 [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #0b1020 0%, #11172b 100%);
-    /* Remove any default top padding the sidebar may have */
+    background: linear-gradient(180deg, #ffffff 0%, #f6f6f6 100%);
+    border-right: 1px solid var(--vdb-border);
+}
+
+/* Shrink the default header area so the brand sits closer to the top */
+[data-testid="stSidebarHeader"] {
+    min-height: 0 !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0 !important;
+}
+
+[data-testid="stSidebarUserContent"] {
     padding-top: 0 !important;
 }
 
-/* Remove the large default padding above the sidebar container */
-[data-testid="stSidebar"] > div:first-child {
+[data-testid="stSidebar"] .block-container {
     padding-top: 0 !important;
-    margin-top: 0 !important;
+}
+
+/* Pull the custom brand block upward slightly to offset Streamlit spacing */
+.vdb-sidebar-brand {
+    margin-top: -1.9rem;
+    text-align: center;
+    width: 100%;
 }
 
 /* Remove any extra margin from the first sidebar element */
 [data-testid="stSidebar"] .element-container:first-child {
     margin-top: 0 !important;
     padding-top: 0 !important;
-}
-
-/* Center and lift the custom brand block */
-.vdb-sidebar-brand {
-    margin-top: -1.35rem;
-    text-align: center;
-    width: 100%;
 }
 
 /* Remove image margin */
@@ -62,7 +95,7 @@ def apply_theme() -> None:
 }
 
 [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
-    color: rgba(245,247,251,.8);
+    color: var(--vdb-muted);
 }
 
 /* ---------- Metrics ---------- */
@@ -72,7 +105,7 @@ def apply_theme() -> None:
   border: 1px solid var(--vdb-border);
   border-radius: 18px;
   padding: 1rem;
-  box-shadow: 0 10px 28px rgba(0,0,0,.16);
+  box-shadow: 0 10px 28px rgba(0,0,0,.06);
 }
 
 /* ---------- Buttons ---------- */
@@ -86,6 +119,24 @@ def apply_theme() -> None:
   font-weight: 700 !important;
 }
 
+.stButton > button,
+.stDownloadButton > button,
+[data-testid="stBaseButton-secondary"],
+[data-testid="stBaseButton-primary"] {
+  background: #ffffff !important;
+  color: #111111 !important;
+  border: 1px solid rgba(17,17,17,.16) !important;
+  box-shadow: none !important;
+}
+
+.stButton > button:hover,
+.stDownloadButton > button:hover,
+[data-testid="stBaseButton-secondary"]:hover,
+[data-testid="stBaseButton-primary"]:hover {
+  background: #f3f3f3 !important;
+  border-color: rgba(17,17,17,.3) !important;
+}
+
 /* ---------- Hero ---------- */
 
 .vdb-hero {
@@ -93,13 +144,13 @@ def apply_theme() -> None:
   overflow: hidden;
   border: 1px solid var(--vdb-border);
   background:
-    radial-gradient(circle at top left, rgba(124,108,255,.34), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(37,208,255,.18), transparent 35%),
-    linear-gradient(135deg, rgba(255,255,255,.09), rgba(255,255,255,.035));
+    radial-gradient(circle at top left, rgba(0,0,0,.045), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(0,0,0,.03), transparent 35%),
+    linear-gradient(135deg, #ffffff, #f4f4f4);
   border-radius: 28px;
   padding: 2rem 2.1rem;
   margin-bottom: 1.15rem;
-  box-shadow: 0 24px 70px rgba(0,0,0,.22);
+  box-shadow: 0 24px 70px rgba(0,0,0,.08);
 }
 
 .vdb-hero h1 {
@@ -130,10 +181,10 @@ def apply_theme() -> None:
   align-items: center;
   gap: .35rem;
   border: 1px solid var(--vdb-border);
-  background: rgba(255,255,255,.07);
+  background: #f5f5f5;
   border-radius: 999px;
   padding: .32rem .7rem;
-  color: rgba(245,247,251,.82);
+  color: var(--vdb-text);
   font-size: .82rem;
   font-weight: 700;
 }
@@ -160,15 +211,15 @@ def apply_theme() -> None:
 
 .vdb-card {
   border: 1px solid var(--vdb-border);
-  background: linear-gradient(180deg, rgba(255,255,255,.075), rgba(255,255,255,.035));
+  background: linear-gradient(180deg, #ffffff, #fafafa);
   border-radius: 22px;
   padding: 1.05rem;
   min-height: 182px;
-  box-shadow: 0 14px 42px rgba(0,0,0,.16);
+  box-shadow: 0 14px 42px rgba(0,0,0,.06);
 }
 
 .vdb-card:hover {
-  border-color: rgba(124,108,255,.58);
+  border-color: rgba(17,17,17,.32);
   transform: translateY(-1px);
   transition: all .16s ease;
 }
@@ -187,7 +238,7 @@ def apply_theme() -> None:
   display:flex;
   align-items:center;
   justify-content:center;
-  background:linear-gradient(135deg,rgba(124,108,255,.26),rgba(37,208,255,.16));
+  background:linear-gradient(135deg,#f7f7f7,#ececec);
   border:1px solid var(--vdb-border);
   font-size:1.25rem;
 }
@@ -218,22 +269,22 @@ def apply_theme() -> None:
   padding:.2rem .55rem;
   border-radius:999px;
   border:1px solid var(--vdb-border);
-  color:rgba(245,247,251,.8);
+  color:var(--vdb-text);
 }
 
 .status-built-in{
-  background:rgba(53,208,127,.14);
-  border-color:rgba(53,208,127,.34);
+  background:rgba(15,157,88,.12);
+  border-color:rgba(15,157,88,.28);
 }
 
 .status-ready{
-  background:rgba(124,108,255,.16);
-  border-color:rgba(124,108,255,.34);
+  background:rgba(17,17,17,.06);
+  border-color:rgba(17,17,17,.18);
 }
 
 .status-linked{
-  background:rgba(255,190,85,.13);
-  border-color:rgba(255,190,85,.28);
+  background:rgba(194,138,0,.08);
+  border-color:rgba(194,138,0,.24);
 }
 
 .vdb-section-title{
@@ -254,7 +305,7 @@ def apply_theme() -> None:
 
 .vdb-command{
   border:1px solid var(--vdb-border);
-  background:rgba(0,0,0,.2);
+  background:#f7f7f7;
   border-radius:18px;
   padding:1rem;
 }
@@ -272,7 +323,7 @@ def apply_theme() -> None:
 }
 
 .vdb-timeline{
-  border-left:2px solid rgba(124,108,255,.35);
+  border-left:2px solid rgba(17,17,17,.18);
   margin-left:.45rem;
   padding-left:1rem;
 }
@@ -282,7 +333,7 @@ def apply_theme() -> None:
 }
 
 .vdb-step b{
-  color:#fff;
+  color:var(--vdb-text);
 }
 
 .vdb-step span{
