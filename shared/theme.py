@@ -48,11 +48,17 @@ def apply_theme() -> None:
     padding-top: 0 !important;
 }
 
-/* Nudge the logo up slightly to remove extra space above it */
+/* Center and lift the custom brand block */
+.vdb-sidebar-brand {
+    margin-top: -1.35rem;
+    text-align: center;
+    width: 100%;
+}
+
+/* Remove image margin */
 [data-testid="stSidebar"] img {
-    margin-top: -0.45rem !important;
+    margin-top: 0 !important;
     display: block;
-    /* ensure block layout so negative margin behaves predictably */
 }
 
 [data-testid="stSidebar"] [data-testid="stMarkdownContainer"] p {
