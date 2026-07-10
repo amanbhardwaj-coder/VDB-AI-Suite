@@ -66,7 +66,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/inventory-tool",
         module_path="modules/inventory-tool",
         status="Module pending",
-        enabled=True,
+        enabled=False,
     ),
     Tool(
         key="file_merge",
@@ -77,7 +77,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/file_merge",
         module_path="modules/file_merge",
         status="Module pending",
-        enabled=True,
+        enabled=False,
         favorite=True,
     ),
     Tool(
@@ -89,7 +89,7 @@ TOOLS: list[Tool] = [
         repo_url="https://github.com/amanbhardwaj-coder/Excelsplitter",
         module_path="modules/Excelsplitter",
         status="Module pending",
-        enabled=True,
+        enabled=False,
     ),
     Tool(
         key="url_checker",
