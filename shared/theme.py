@@ -112,7 +112,24 @@ h6 {
 [data-baseweb="select"] > div {
   background: #ffffff !important;
   color: #111111 !important;
-  border-color: rgba(17,17,17,.16) !important;
+  border: 1px solid #111111 !important;
+  border-color: #111111 !important;
+  box-shadow: none !important;
+}
+
+[data-baseweb="popover"] [role="listbox"] {
+  background: #ffffff !important;
+  border: 1px solid #111111 !important;
+  box-shadow: none !important;
+}
+
+[data-baseweb="popover"] [role="option"] {
+  border-bottom: 1px solid #111111 !important;
+  color: #111111 !important;
+}
+
+[data-baseweb="popover"] [role="option"]:last-child {
+  border-bottom: none !important;
 }
 
 /* ---------- Metrics ---------- */
