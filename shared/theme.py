@@ -109,12 +109,19 @@ h6 {
   color: #ffffff !important;
 }
 
+[data-testid="stSelectbox"] [data-baseweb="select"] > div,
+[data-testid="stSelectbox"] [data-baseweb="select"] > div:first-child,
 [data-baseweb="select"] > div {
   background: #ffffff !important;
   color: #111111 !important;
-  border: 1px solid #111111 !important;
+  border: 2px solid #111111 !important;
   border-color: #111111 !important;
-  box-shadow: none !important;
+  box-shadow: inset 0 0 0 1px #111111 !important;
+  border-radius: 14px !important;
+}
+
+[data-testid="stSelectbox"] [data-baseweb="select"] {
+  border-radius: 14px !important;
 }
 
 [data-baseweb="popover"] [role="listbox"] {
