@@ -23,7 +23,7 @@ def apply_theme() -> None:
 /* ---------- Main Page ---------- */
 
 .block-container {
-    padding-top: 1rem !important;
+    padding-top: 2.25rem !important;
     padding-bottom: 3rem;
     max-width: 1450px;
 }
