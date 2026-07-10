@@ -16,7 +16,7 @@ from shared.constants import VDB_LOGO_URL
 # Streamlit setup
 # ----------------------------
 st.set_page_config(page_title="Fast URL Checker", page_icon=VDB_LOGO_URL, layout="wide")
-st.title("⚡ Fast & Reliable URL Checker (CSV upload or CSV URL)")
+st.title("Fast & Reliable URL Checker (CSV upload or CSV URL)")
 
 
 # ----------------------------
@@ -82,9 +82,6 @@ def read_csv_flexible(text: str, sep: str = ",", header_mode: str = "infer") -> 
         )
 
 
-# ----------------------------
-# HTTP client
-# ----------------------------
 def make_session(connect_timeout: int, read_timeout: int, total_retries: int) -> requests.Session:
     s = requests.Session()
 
@@ -112,9 +109,6 @@ def make_session(connect_timeout: int, read_timeout: int, total_retries: int) ->
     return s
 
 
-# ----------------------------
-# URL checker
-# ----------------------------
 def check_one(
     session: requests.Session,
     url: str,
@@ -226,9 +220,6 @@ def run_checks(
     return pd.DataFrame(results)
 
 
-# ----------------------------
-# UI: input
-# ----------------------------
 st.subheader("1) Load URLs")
 
 mode = st.radio("Input method", ["Upload CSV", "CSV via URL"], horizontal=True)
@@ -294,10 +285,6 @@ else:
         except Exception as e:
             st.error(f"Could not fetch/read CSV from URL: {e}")
 
-
-# ----------------------------
-# UI: process
-# ----------------------------
 if df is not None:
     st.subheader("2) Pick URL columns")
     st.dataframe(df.head(20), use_container_width=True)
