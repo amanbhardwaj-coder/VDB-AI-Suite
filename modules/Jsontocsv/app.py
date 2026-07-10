@@ -5,7 +5,7 @@ import json
 
 st.set_page_config(page_title="JSON to CSV Converter", page_icon=VDB_LOGO_URL, layout="wide")
 
-st.title("📄 Postman JSON → CSV Converter")
+st.title("Postman JSON → CSV Converter")
 
 uploaded_file = st.file_uploader(
     "Upload your Postman JSON response",
@@ -16,7 +16,6 @@ if uploaded_file:
     try:
         data = json.load(uploaded_file)
 
-        # Update this path if your JSON structure differs
         records = data.get("response", {}).get("body", {}).get("diamonds", [])
 
         if not records:
