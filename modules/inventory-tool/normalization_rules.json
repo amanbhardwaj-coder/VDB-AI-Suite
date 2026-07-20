@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "updated_at": "2026-07-09T18:06:33.596442+05:30",
+  "value_maps": {},
+  "global_regex_replacements": [],
+  "sku_rules": {
+    "enabled": true
+  },
+  "image_rules": {
+    "enabled": false
+  },
+  "price_rules": {
+    "currency": "USD",
+    "default_base_price": 0,
+    "adjustments": {}
+  }
+}

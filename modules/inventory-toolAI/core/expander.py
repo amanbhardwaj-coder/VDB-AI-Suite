@@ -39,11 +39,34 @@ def _apply_pricing(row, config):
     return row
 
 
+def _configured_expand_columns(normalized_df, config):
+    output = []
+    seen = set()
+
+    for item in config.get("mapping", []):
+        header = str(item.get("accepted_header", "")).strip()
+        if not header or header not in normalized_df.columns:
+            continue
+
+        should_expand = bool(item.get("expand", False)) or str(item.get("role", "")).lower() == "variant"
+        if should_expand and header not in seen:
+            seen.add(header)
+            output.append(header)
+
+    for column in normalized_df.columns:
+        if is_available_column(column) and column not in seen:
+            seen.add(column)
+            output.append(column)
+
+    return output
+
+
 def expand_inventory(normalized_df, config=None):
     """
     V3 starter expansion engine.
 
-    It expands columns whose headers start with "Available ".
+    It expands columns marked as variant in config or columns that already
+    follow the "Available " naming pattern.
     """
     if config is None:
         config = {}
@@ -51,7 +74,7 @@ def expand_inventory(normalized_df, config=None):
     if normalized_df is None or normalized_df.empty:
         return pd.DataFrame()
 
-    available_cols = [col for col in normalized_df.columns if is_available_column(col)]
+    available_cols = _configured_expand_columns(normalized_df, config)
 
     if not available_cols:
         out = normalized_df.copy()
